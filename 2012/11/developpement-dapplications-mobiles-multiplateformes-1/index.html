@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Olivier Guillet | Cyberculture</title>
+    <meta name="author" content="Olivier Guillet">
+    <meta name="description" content="Cyberculture">
+    <meta name="generator" content="Hugo 0.15" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    
+
+    <link rel="shortcut icon" href="http://olivierguillet.com/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://olivierguillet.com/css/screen.css">
+    <link rel="stylesheet" href="http://olivierguillet.com/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #3498db;}
+    .pagination a {color: #3498db;}
+    .gist .gist-file .gist-meta a:visited {color: #3498db !important;}
+    a:focus, a:hover {color: #2079b4;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #2079b4;}
+    .older-posts:hover, .newer-posts:hover {color: #2079b4;}
+</style>
+</head>
+<body class="post-template">
+
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://olivierguillet.com/">Olivier Guillet</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Cyberculture</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">About me</a></li>
+      	
+    </ul>
+</nav>
+
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">Développement d’applications mobiles multiplateformes (1/2)</h1>
+	        <div class="post-meta"><time datetime="16 November 2012">16 November 2012</time></div>
+	        </header>
+
+	        <section class="post-content">
+	            
+
+<p>Avec la <strong>multiplication des plateformes mobiles</strong>, la question du développement multiplateforme s’est rapidement posée, afin de tenter de réduire les coûts de développement.</p>
+
+<p>Dans la première partie de cet article je vais décrire les différentes techniques pour cette mutualisation des développements, ainsi que leurs limitations</p>
+
+<p>Dans le billet suivant je présenterai les principales solutions open sources ou commerciales existantes.</p>
+
+<p>A ce jour on peut rencontrer <strong>4  techniques pour le développement multiplateformes</strong> :</p>
+
+<ul>
+<li>Cross-compilation en code natif</li>
+<li>Développement bas niveau</li>
+<li>Développement web – hybride</li>
+<li>Application web sur un serveur de rendu optimisé pour mobile</li>
+</ul>
+
+<p>A noter que beaucoup de solutions multiplateformes mélangent plusieurs de ces différentes approches pour essayer de tirer le meilleur parti de chacune.</p>
+
+<h2 id="1-approche-native:b1406245257b5b395e21724fdd4000cd">1 – Approche native</h2>
+
+<ul>
+<li>Cette première technique consiste à utiliser les composants natifs des plateformes mobiles, via une API et un langage de programmation unique.</li>
+<li>Un <strong>cross-compiler</strong> permet ensuite de compiler le code en application native. Il est également possible de faire exécuter ce code sur une machine virtuelle embarquée dans une application native.</li>
+<li>Ces techniques permettent d’avoir des <strong>performances optimales</strong> (si compilation en binaires natifs), et un rendu natif de l’IHM, mais sont souvent limitées par le plus petit dénominateur commun entre les différentes plateformes.</li>
+</ul>
+
+<h2 id="2-approche-bas-niveau:b1406245257b5b395e21724fdd4000cd">2 – Approche bas niveau</h2>
+
+<ul>
+<li>Cette technique consiste à dessiner des composants graphiques avec des langages et librairies bas niveau comme le couple <strong>C++/OpenGL</strong>, dans le but de bénéficier de performances maximales.</li>
+<li>Cela est possible sur la majorité des plateformes mobiles (iOS, Android, Windows Phone).</li>
+<li>L’inconvénient de cette approche est de perdre la facilité d’utilisation des widgets natifs, et surtout leur identité visuelle. En effet chaque plateforme mobile possède son propre look-and-feel et ses mécanismes d’interactions avec l’utilisateur.</li>
+<li>Cette approche est donc le plus souvent utilisée pour le développement de <strong>jeux vidéos</strong>, plutôt que pour des projets plus classiques type applications d’entreprises.</li>
+</ul>
+
+<h2 id="3-approche-web:b1406245257b5b395e21724fdd4000cd">3 – Approche web</h2>
+
+<ul>
+<li>Cette troisième (et principale) approche se base sur le <strong>navigateur web embarqué</strong> pour les composants visuels en HTML5, et un accès via JavaScript aux fonctionnalités natives.</li>
+<li>On parle alors d’<strong>applications hybrides</strong>, une « coque » native embarquant alors des vues web.</li>
+<li>Différents frameworks JavaScript (optimisés pour le mobile ou non) peuvent être utilisés pour mettre en place de telles solutions.</li>
+<li>Les deux facteurs problématiques sont ici la <strong>compatibilité HTML5</strong> du navigateur embarqué qui peut être plus ou moins bonne, et la <strong>perte de performances</strong> par rapport à une application native qui est souvent importante.</li>
+</ul>
+
+<h2 id="4-serveur-de-rendu:b1406245257b5b395e21724fdd4000cd">4 – Serveur de rendu</h2>
+
+<ul>
+<li>Cette dernière approche se base sur un serveur hébergeant un <strong>moteur de rendu</strong> afin d’optimiser l’affichage d’une application web sur mobile, à la manière des navigateurs Opera Mobile et Opera Mini.</li>
+<li>Nécessite de faire tourner l’application sur <strong>un serveur web</strong>, plus le moteur de rendu</li>
+<li>Le moteur de rendu doit s’adapter aux différentes plateformes clientes</li>
+<li>Cette technique s’appuie également sur le navigateur web embarqué et est donc complémentaire de la troisième approche.</li>
+<li>Chaque page est rendue séparément, il n’y a pas d’animations entre
+écrans</li>
+</ul>
+
+	        </section>
+
+	        <section class="post-tags" style="padding-bottom:60px;">
+	            <div class="post-meta tags">
+	            <i class="fa fa-fw fa-tag"></i>
+	            
+	            <a href="http://olivierguillet.com/tags/mobile">mobile </a>
+	            
+	            <a href="http://olivierguillet.com/tags/multiplatform">multiplatform </a>
+	            
+	            <a href="http://olivierguillet.com/tags/development">development </a>
+	            
+	            </div>
+	        </section>
+			
+			
+	        	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'Olivier Guillet';
+    var disqus_identifier = 'http:\/\/olivierguillet.com\/2012\/11\/developpement-dapplications-mobiles-multiplateformes-1\/';
+    var disqus_title = 'Développement d’applications mobiles multiplateformes (1\/2)';
+    var disqus_url = 'http:\/\/olivierguillet.com\/2012\/11\/developpement-dapplications-mobiles-multiplateformes-1\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	        
+			
+			
+
+	        <section class="share">
+	            <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
+	            <p class="info prompt">Share</p>
+	            <a href="http://twitter.com/share?text=D%c3%a9veloppement%20d%e2%80%99applications%20mobiles%20multiplateformes%20%281%2f2%29&url=http%3a%2f%2folivierguillet.com%2f2012%2f11%2fdeveloppement-dapplications-mobiles-multiplateformes-1%2f" title="Share on Twitter"
+	                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+	                <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
+	            </a>
+	            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2folivierguillet.com%2f2012%2f11%2fdeveloppement-dapplications-mobiles-multiplateformes-1%2f" title="Share on Facebook"
+	                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+	                <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
+	            </a>
+	            <a href="https://plus.google.com/share?url=http%3a%2f%2folivierguillet.com%2f2012%2f11%2fdeveloppement-dapplications-mobiles-multiplateformes-1%2f" title="Share on Google+"
+	               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+	                <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+	            </a>
+	        </section>
+
+	        <footer class="post-footer">
+	            <section class="author">
+    <div class="authorimage" style="background: url(http://olivierguillet.com/img/avatar.jpg)"></div>
+    <h4>Olivier Guillet</h4>
+    <p class="bio"></p>
+    <p class="meta">
+      <i class="fa fa-fw fa-map-marker"></i> Nantes - France
+    </p>
+</section>
+	        </footer>
+	    </article>
+	</main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/OlivierGuillet" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/OlivierGuillet" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    <a href="" type="application/rss+xml" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
+
+		<section class="copyright">&copy; 2016 <a href="http://olivierguillet.com/">Olivier Guillet</a>. All rights reserved.</section>
+	</div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://olivierguillet.com/js/index.js"></script>
+<script src="http://olivierguillet.com/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-27460975-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+
+</body>
+</html>

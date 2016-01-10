@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multiplatform on Olivier Guillet | Cyberculture</title>
+    <link>http://olivierguillet.com/tags/multiplatform/</link>
+    <description>Recent content in Multiplatform on Olivier Guillet | Cyberculture</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Nov 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://olivierguillet.com/tags/multiplatform/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Développement d’applications mobiles multiplateformes (1/2)</title>
+      <link>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</link>
+      <pubDate>Fri, 16 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</guid>
+      <description>
+
+&lt;p&gt;Avec la &lt;strong&gt;multiplication des plateformes mobiles&lt;/strong&gt;, la question du développement multiplateforme s’est rapidement posée, afin de tenter de réduire les coûts de développement.&lt;/p&gt;
+
+&lt;p&gt;Dans la première partie de cet article je vais décrire les différentes techniques pour cette mutualisation des développements, ainsi que leurs limitations&lt;/p&gt;
+
+&lt;p&gt;Dans le billet suivant je présenterai les principales solutions open sources ou commerciales existantes.&lt;/p&gt;
+
+&lt;p&gt;A ce jour on peut rencontrer &lt;strong&gt;4  techniques pour le développement multiplateformes&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cross-compilation en code natif&lt;/li&gt;
+&lt;li&gt;Développement bas niveau&lt;/li&gt;
+&lt;li&gt;Développement web – hybride&lt;/li&gt;
+&lt;li&gt;Application web sur un serveur de rendu optimisé pour mobile&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A noter que beaucoup de solutions multiplateformes mélangent plusieurs de ces différentes approches pour essayer de tirer le meilleur parti de chacune.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-approche-native:b1406245257b5b395e21724fdd4000cd&#34;&gt;1 – Approche native&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cette première technique consiste à utiliser les composants natifs des plateformes mobiles, via une API et un langage de programmation unique.&lt;/li&gt;
+&lt;li&gt;Un &lt;strong&gt;cross-compiler&lt;/strong&gt; permet ensuite de compiler le code en application native. Il est également possible de faire exécuter ce code sur une machine virtuelle embarquée dans une application native.&lt;/li&gt;
+&lt;li&gt;Ces techniques permettent d’avoir des &lt;strong&gt;performances optimales&lt;/strong&gt; (si compilation en binaires natifs), et un rendu natif de l’IHM, mais sont souvent limitées par le plus petit dénominateur commun entre les différentes plateformes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2-approche-bas-niveau:b1406245257b5b395e21724fdd4000cd&#34;&gt;2 – Approche bas niveau&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cette technique consiste à dessiner des composants graphiques avec des langages et librairies bas niveau comme le couple &lt;strong&gt;C++/OpenGL&lt;/strong&gt;, dans le but de bénéficier de performances maximales.&lt;/li&gt;
+&lt;li&gt;Cela est possible sur la majorité des plateformes mobiles (iOS, Android, Windows Phone).&lt;/li&gt;
+&lt;li&gt;L’inconvénient de cette approche est de perdre la facilité d’utilisation des widgets natifs, et surtout leur identité visuelle. En effet chaque plateforme mobile possède son propre look-and-feel et ses mécanismes d’interactions avec l’utilisateur.&lt;/li&gt;
+&lt;li&gt;Cette approche est donc le plus souvent utilisée pour le développement de &lt;strong&gt;jeux vidéos&lt;/strong&gt;, plutôt que pour des projets plus classiques type applications d’entreprises.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;3-approche-web:b1406245257b5b395e21724fdd4000cd&#34;&gt;3 – Approche web&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cette troisième (et principale) approche se base sur le &lt;strong&gt;navigateur web embarqué&lt;/strong&gt; pour les composants visuels en HTML5, et un accès via JavaScript aux fonctionnalités natives.&lt;/li&gt;
+&lt;li&gt;On parle alors d’&lt;strong&gt;applications hybrides&lt;/strong&gt;, une « coque » native embarquant alors des vues web.&lt;/li&gt;
+&lt;li&gt;Différents frameworks JavaScript (optimisés pour le mobile ou non) peuvent être utilisés pour mettre en place de telles solutions.&lt;/li&gt;
+&lt;li&gt;Les deux facteurs problématiques sont ici la &lt;strong&gt;compatibilité HTML5&lt;/strong&gt; du navigateur embarqué qui peut être plus ou moins bonne, et la &lt;strong&gt;perte de performances&lt;/strong&gt; par rapport à une application native qui est souvent importante.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;4-serveur-de-rendu:b1406245257b5b395e21724fdd4000cd&#34;&gt;4 – Serveur de rendu&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cette dernière approche se base sur un serveur hébergeant un &lt;strong&gt;moteur de rendu&lt;/strong&gt; afin d’optimiser l’affichage d’une application web sur mobile, à la manière des navigateurs Opera Mobile et Opera Mini.&lt;/li&gt;
+&lt;li&gt;Nécessite de faire tourner l’application sur &lt;strong&gt;un serveur web&lt;/strong&gt;, plus le moteur de rendu&lt;/li&gt;
+&lt;li&gt;Le moteur de rendu doit s’adapter aux différentes plateformes clientes&lt;/li&gt;
+&lt;li&gt;Cette technique s’appuie également sur le navigateur web embarqué et est donc complémentaire de la troisième approche.&lt;/li&gt;
+&lt;li&gt;Chaque page est rendue séparément, il n’y a pas d’animations entre
+écrans&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Développement d’applications mobiles multiplateformes (2/2)</title>
+      <link>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</link>
+      <pubDate>Fri, 16 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</guid>
+      <description>
+
+&lt;hr /&gt;
+
+&lt;p&gt;Ce billet fait suite au précédent décrivant les principales techniques de développement mobile multiplateformes.&lt;/p&gt;
+
+&lt;p&gt;Voyons ici les &lt;strong&gt;principales solutions existantes&lt;/strong&gt; et leurs éditeurs:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://phonegap.com/&#34;&gt;PhoneGap&lt;/a&gt; (Adobe)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.appcelerator.com/&#34;&gt;Titanium&lt;/a&gt;  (Appcelerator)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.motorola.com/Business/US-EN/RhoMobile+Suite/Rhodes&#34;&gt;Rhodes&lt;/a&gt; (Rhomobile)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jquerymobile.com/&#34;&gt;jQuery Mobile&lt;/a&gt; (jQuery Foundation, association à but non lucratif)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sencha.com/products/touch&#34;&gt;Sencha Touch&lt;/a&gt; (Sencha)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.adobe.com/devnet/devices.html&#34;&gt;Flex mobile&lt;/a&gt; (Adobe)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xamarin.com/monotouch&#34;&gt;MonoTouch&lt;/a&gt; / &lt;a href=&#34;http://xamarin.com/monoforandroid&#34;&gt;Mono for Android&lt;/a&gt; (Xamarin)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.backelite.com/software/&#34;&gt;Wope&lt;/a&gt; (Backelite)&lt;/li&gt;
+&lt;li&gt;Développement hybride « maison »&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bien évidemment il existe de nombreux autres solutions / frameworks / librairies pour le développement multiplateformes, non décrites ici.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_phonegap.jpg&#34; alt=&#34;PhoneGap&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Pour la mise en place d’application hybride comportant des vues web(troisième approche).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gratuit, open source, supporte TOUTES les plateformes mobiles&lt;/strong&gt;, support payant en option.&lt;/li&gt;
+&lt;li&gt;Permet d’appeler les API natives des SDKs mobiles depuis le JavaScript (accès au contacts, caméra, gyroscope, GPS, base de données locale).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ne propose aucun composants visuels&lt;/strong&gt;! Phonegap est en fait une &amp;ldquo;boite&amp;rdquo; ou une &amp;ldquo;coque native&amp;rdquo; pour encapsuler des composants HTML5 et JavaScript.&lt;/li&gt;
+&lt;li&gt;PhoneGap N’EST PAS un framework JavaScript, il s’utilise AVEC un framework JavaScript complémentaire (au choix).&lt;/li&gt;
+&lt;li&gt;Alternatives : Trigger.io, Sencha Touch native packaging, coque native &amp;ldquo;fait maison&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_titanium.png&#34; alt=&#34;Titanium&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Propose une API &lt;strong&gt;100% JavaScript&lt;/strong&gt; (pas de HTML), le code est ensuite transformé en application native.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gratuit, API open source&lt;/strong&gt; (mais pas le compilateur), supporte uniquement iOS et Android, support payant en option.&lt;/li&gt;
+&lt;li&gt;Inclut un outil de cross-compilation &lt;strong&gt;ONLINE&lt;/strong&gt; qui demande un accès internet &lt;strong&gt;PERMANENT&lt;/strong&gt;. Les fichiers sources sont envoyés à un serveur propriétaire qui renvoie alors les binaires (JavaScript précompilé). Une machine virtuelle JavaScript exécute alors le code.&lt;/li&gt;
+&lt;li&gt;Inconvénients : syndrome de la boîte noire, difficultés pour débugger, problèmes éventuels de performances et de gestion mémoire.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_rhomobile.png&#34; alt=&#34;Rhodes&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Développement d’applications hybrides en &lt;strong&gt;Ruby et JavaScript-HTML&lt;/strong&gt;, fortement inspiré de Ruby On Rails.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gratuit, open source&lt;/strong&gt;, supporte iOS, Android, Windows Phone 7 et BlackBerry.&lt;/li&gt;
+&lt;li&gt;Peu de composants d’IHM fournis, nécessite un framework mobile JavaScript complémentaire (au choix).&lt;/li&gt;
+&lt;li&gt;Plutôt à destination des développeurs Ruby On Rails.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_jquery.png&#34; alt=&#34;jQuery Mobile&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Version mobile du framework &lt;strong&gt;JavaScript jQuery UI&lt;/strong&gt; (il contient donc la librairie jQuery).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gratuit, open source&lt;/strong&gt;, supporte &lt;strong&gt;TOUTES&lt;/strong&gt; les plateformes mobiles.&lt;/li&gt;
+&lt;li&gt;Développement en HTML (et JavaScript), plus simple de prise en main que Sencha Touch.&lt;/li&gt;
+&lt;li&gt;Performances moins bonnes que Sencha Touch, et interface reconnaissable qui ne ressemble guère aux widgets natifs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_sencha.png&#34; alt=&#34;Sencha Touch&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Version mobile du framework &lt;strong&gt;JavaScript ExtJS&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Compatible &lt;strong&gt;iOS, Android, BlackBerry&lt;/strong&gt;. Compatibilité Windows Phone 8 annoncée (mais pas WP7).&lt;/li&gt;
+&lt;li&gt;SDK &lt;strong&gt;open source et gratuit&lt;/strong&gt; pour le développement d’applications commerciales, payant pour une utilisation OEM. Environnement de développement payant (Sencha Architect).&lt;/li&gt;
+&lt;li&gt;Sencha Touch est &lt;strong&gt;Full JavaScript&lt;/strong&gt; (pas de HTML), le DOM est généré par la librairie JavaScript. La prise en main peut donc être plus déroutante que jQuery Mobile.&lt;/li&gt;
+&lt;li&gt;Framework &lt;strong&gt;MVC&lt;/strong&gt; et fortement orienté objet.&lt;/li&gt;
+&lt;li&gt;Bonnes performances pour un framework JavaScript&lt;/li&gt;
+&lt;li&gt;De nombreux composants d’IHM (widgets JavaScript assez proches du natif, en tout cas plus que jQuery Mobile).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_adobeAIR.jpg&#34; alt=&#34;Flash (Adobe AIR)&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Fait tourner des applications Flash sur une &lt;strong&gt;machine virtuelle embarquée&lt;/strong&gt; (Adobe AIR).&lt;/li&gt;
+&lt;li&gt;Compatible &lt;strong&gt;Android, iOS, et BlackBerry&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;SDK gratuit mais environnement de développement payant (Adobe Flash Builder).&lt;/li&gt;
+&lt;li&gt;Pas d’accès aux widgets natifs des plateformes, problèmes éventuels de performances et mémoire (comme toutes les solutions utilisant une machine virtuelle).&lt;/li&gt;
+&lt;li&gt;Le plugin Flash pour Safari Mobile étant abandonnée, la pérennité de cette technologie est incertaine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_Mono.png&#34; alt=&#34;Mono&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Permet de développer en &lt;strong&gt;C#.NET&lt;/strong&gt; sur Android et iOS en générant des applications natives.&lt;/li&gt;
+&lt;li&gt;La partie mobile de Mono est composé en fait de deux SDKs : &lt;strong&gt;Monotouch&lt;/strong&gt; (pour iOS, nécessite un Mac avec XCode), et &lt;strong&gt;Mono for Android&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Produit &lt;strong&gt;commercial payant&lt;/strong&gt; (399$ par plateforme).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ne masque pas les SDKs natifs sous-jacents&lt;/strong&gt;. On manipule des StoryBoards et Controllers sous iOS, ou des Activity sous Android, le tout en C#.&lt;/li&gt;
+&lt;li&gt;Seul le code métier peut être mutualisé entre iOS, Android et Windows Phone, toute la partie IHM reste spécifique à chaque plateforme.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_wope.jpg&#34; alt=&#34;Wope&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Edit du 28/11/2012&lt;/strong&gt; : la solution a évolué depuis mes tests datant de 2011 (cf. le commentaire du product owner wope ci-dessous).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;anciennement BKRender&lt;/li&gt;
+&lt;li&gt;Framework mobile HTML5 et JavaScript, plus un moteur de rendu.&lt;/li&gt;
+&lt;li&gt;Solution commerciale et payante.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Un serveur de rendu&lt;/strong&gt; génère un fichier html adapté et optimisé au terminal qui l’appelle.&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Les applications ont un rendu de site web, pas d’animations entre écrans mais un chargement de la page.&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Grande compatibilité au détriment de l’expérience utilisateur.&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Permet de packager des applications pour déploiement sur les stores (applications hybrides donc)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_zepto.jpg&#34; alt=&#34;Zepto.js&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Pour &lt;strong&gt;optimiser les performances au besoin&lt;/strong&gt;, il peut être intéressant de mettre une place une solution &lt;strong&gt;hybride personnalisée&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Phonegap peut être utilisé pour &lt;strong&gt;prototyper&lt;/strong&gt;, on écrira ensuite le code natif dont on a besoin (et pas plus).&lt;/li&gt;
+&lt;li&gt;Les ponts JavaScript &amp;lt;-&amp;gt; SDK natif ne sont pas très compliqués à développer (chaque plateforme mobile le permet).&lt;/li&gt;
+&lt;li&gt;Considérer l’utilisation de &lt;strong&gt;&lt;a href=&#34;http://zeptojs.com/&#34;&gt;Zepto.js&lt;/a&gt;&lt;/strong&gt; à la place de jQuery (la syntaxe est la même). Zepto ne fonctionne que sur les navigateurs basés sur WebKit mais il est beaucoup plus léger. Les framework &lt;a href=&#34;http://xuijs.com/&#34;&gt;XUI&lt;/a&gt; et &lt;a href=&#34;http://quojs.tapquo.com/&#34;&gt;QuoJS&lt;/a&gt;
+sont d’autres alternatives crédibles.&lt;/li&gt;
+&lt;li&gt;On utilisera un &lt;strong&gt;framework JavaScript MVC&lt;/strong&gt; tel que &lt;a href=&#34;http://backbonejs.org/&#34;&gt;BackBone.js&lt;/a&gt; ou &lt;a href=&#34;http://angularjs.org/&#34;&gt;Angular&lt;/a&gt; pour structurer le code, faciliter les tests et la maintenance.&lt;/li&gt;
+&lt;li&gt;De même on pourra utiliser une librairie de &lt;strong&gt;templating JavaScript&lt;/strong&gt; telle que &lt;a href=&#34;http://icanhazjs.com/&#34;&gt;ICanHaz.js&lt;/a&gt; ou &lt;a href=&#34;http://mustache.github.com/&#34;&gt;Mustache&lt;/a&gt; .&lt;/li&gt;
+&lt;li&gt;De nombreuses micro-librairies Javascript permettent de gérer le scrolling et les gestures tactiles (QuoJS, iSCroll4, Mobile Boilerplate, Hammer.js, …).&lt;/li&gt;
+&lt;li&gt;Pour toutes ces librairies Javascript, on pourra trouver son bonheur sur le site &lt;a href=&#34;http://microjs.com/&#34;&gt;Microjs.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conclusion:63a9e4e344bbe209be40dd2b35ebef45&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Il n’y a pas de solution miracle, chaque technologie/solution a ses avantages et inconvénients.&lt;/li&gt;
+&lt;li&gt;Aucune technologie multiplateforme ne permet d’être aussi performante que le développement natif tout en ayant un look-and-feel natif.&lt;/li&gt;
+&lt;li&gt;Le choix d’une technologie doit être un compromis entre différents facteurs :
+
+&lt;ul&gt;
+&lt;li&gt;Budget disponible&lt;/li&gt;
+&lt;li&gt;Nombre de plateformes cibles&lt;/li&gt;
+&lt;li&gt;Performances désirées&lt;/li&gt;
+&lt;li&gt;Type d’application&lt;/li&gt;
+&lt;li&gt;Connaissances des équipes de développement&lt;/li&gt;
+&lt;li&gt;Présence souhaitée ou non sur les magasins d’applications / fréquence des mises à jour&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

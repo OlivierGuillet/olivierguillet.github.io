@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://olivierguillet.com/</loc>
+    <lastmod>2015-12-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://olivierguillet.com/about/</loc>
+    <lastmod>2015-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</loc>
+    <lastmod>2012-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</loc>
+    <lastmod>2012-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://olivierguillet.com/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</loc>
+    <lastmod>2012-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://olivierguillet.com/2012/02/panorama-plateformes-mobiles/</loc>
+    <lastmod>2012-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://olivierguillet.com/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</loc>
+    <lastmod>2012-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://olivierguillet.com/2012/01/widget-scrolling-horizontal-android/</loc>
+    <lastmod>2012-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://olivierguillet.com/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</loc>
+    <lastmod>2012-01-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://olivierguillet.com/2012/01/comparaison-scrolling-application-android/</loc>
+    <lastmod>2012-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/</loc>
+    <lastmod>2011-12-14T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>

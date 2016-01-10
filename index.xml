@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Olivier Guillet | Cyberculture</title>
+    <link>http://olivierguillet.com/</link>
+    <description>Recent content on Olivier Guillet | Cyberculture</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Dec 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://olivierguillet.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About me</title>
+      <link>http://olivierguillet.com/about/</link>
+      <pubDate>Tue, 22 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/about/</guid>
+      <description>
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/avatar.png&#34; alt=&#34;Olivier Guillet&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Hello from Nantes !&lt;/p&gt;
+
+&lt;p&gt;My passion is to discover how computer sciences are shaping our future, particulary via Virtual / Augmented Reality and the Internet of Things. Geek at heart since childhood, I love to experiment and learn various things.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m currently employed as a senior software engineer and product manager by Emotic. We help our clients with their Digital Transformation, through consulting and with the help of various technologies (web, mobile, digital signage &amp;amp; multi-touch interactions, NFC, IoT, etc&amp;hellip;).&lt;/p&gt;
+
+&lt;p&gt;Before Emotic I worked as a software engineer for health insurance and employee savings companies. Prior to that, I also was a video game programmer for a few years in Paris, making PC and PlayStation games.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Développement d’applications mobiles multiplateformes (1/2)</title>
+      <link>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</link>
+      <pubDate>Fri, 16 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</guid>
+      <description>
+
+&lt;p&gt;Avec la &lt;strong&gt;multiplication des plateformes mobiles&lt;/strong&gt;, la question du développement multiplateforme s’est rapidement posée, afin de tenter de réduire les coûts de développement.&lt;/p&gt;
+
+&lt;p&gt;Dans la première partie de cet article je vais décrire les différentes techniques pour cette mutualisation des développements, ainsi que leurs limitations&lt;/p&gt;
+
+&lt;p&gt;Dans le billet suivant je présenterai les principales solutions open sources ou commerciales existantes.&lt;/p&gt;
+
+&lt;p&gt;A ce jour on peut rencontrer &lt;strong&gt;4  techniques pour le développement multiplateformes&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cross-compilation en code natif&lt;/li&gt;
+&lt;li&gt;Développement bas niveau&lt;/li&gt;
+&lt;li&gt;Développement web – hybride&lt;/li&gt;
+&lt;li&gt;Application web sur un serveur de rendu optimisé pour mobile&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A noter que beaucoup de solutions multiplateformes mélangent plusieurs de ces différentes approches pour essayer de tirer le meilleur parti de chacune.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-approche-native:b1406245257b5b395e21724fdd4000cd&#34;&gt;1 – Approche native&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cette première technique consiste à utiliser les composants natifs des plateformes mobiles, via une API et un langage de programmation unique.&lt;/li&gt;
+&lt;li&gt;Un &lt;strong&gt;cross-compiler&lt;/strong&gt; permet ensuite de compiler le code en application native. Il est également possible de faire exécuter ce code sur une machine virtuelle embarquée dans une application native.&lt;/li&gt;
+&lt;li&gt;Ces techniques permettent d’avoir des &lt;strong&gt;performances optimales&lt;/strong&gt; (si compilation en binaires natifs), et un rendu natif de l’IHM, mais sont souvent limitées par le plus petit dénominateur commun entre les différentes plateformes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2-approche-bas-niveau:b1406245257b5b395e21724fdd4000cd&#34;&gt;2 – Approche bas niveau&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cette technique consiste à dessiner des composants graphiques avec des langages et librairies bas niveau comme le couple &lt;strong&gt;C++/OpenGL&lt;/strong&gt;, dans le but de bénéficier de performances maximales.&lt;/li&gt;
+&lt;li&gt;Cela est possible sur la majorité des plateformes mobiles (iOS, Android, Windows Phone).&lt;/li&gt;
+&lt;li&gt;L’inconvénient de cette approche est de perdre la facilité d’utilisation des widgets natifs, et surtout leur identité visuelle. En effet chaque plateforme mobile possède son propre look-and-feel et ses mécanismes d’interactions avec l’utilisateur.&lt;/li&gt;
+&lt;li&gt;Cette approche est donc le plus souvent utilisée pour le développement de &lt;strong&gt;jeux vidéos&lt;/strong&gt;, plutôt que pour des projets plus classiques type applications d’entreprises.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;3-approche-web:b1406245257b5b395e21724fdd4000cd&#34;&gt;3 – Approche web&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cette troisième (et principale) approche se base sur le &lt;strong&gt;navigateur web embarqué&lt;/strong&gt; pour les composants visuels en HTML5, et un accès via JavaScript aux fonctionnalités natives.&lt;/li&gt;
+&lt;li&gt;On parle alors d’&lt;strong&gt;applications hybrides&lt;/strong&gt;, une « coque » native embarquant alors des vues web.&lt;/li&gt;
+&lt;li&gt;Différents frameworks JavaScript (optimisés pour le mobile ou non) peuvent être utilisés pour mettre en place de telles solutions.&lt;/li&gt;
+&lt;li&gt;Les deux facteurs problématiques sont ici la &lt;strong&gt;compatibilité HTML5&lt;/strong&gt; du navigateur embarqué qui peut être plus ou moins bonne, et la &lt;strong&gt;perte de performances&lt;/strong&gt; par rapport à une application native qui est souvent importante.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;4-serveur-de-rendu:b1406245257b5b395e21724fdd4000cd&#34;&gt;4 – Serveur de rendu&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cette dernière approche se base sur un serveur hébergeant un &lt;strong&gt;moteur de rendu&lt;/strong&gt; afin d’optimiser l’affichage d’une application web sur mobile, à la manière des navigateurs Opera Mobile et Opera Mini.&lt;/li&gt;
+&lt;li&gt;Nécessite de faire tourner l’application sur &lt;strong&gt;un serveur web&lt;/strong&gt;, plus le moteur de rendu&lt;/li&gt;
+&lt;li&gt;Le moteur de rendu doit s’adapter aux différentes plateformes clientes&lt;/li&gt;
+&lt;li&gt;Cette technique s’appuie également sur le navigateur web embarqué et est donc complémentaire de la troisième approche.&lt;/li&gt;
+&lt;li&gt;Chaque page est rendue séparément, il n’y a pas d’animations entre
+écrans&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Développement d’applications mobiles multiplateformes (2/2)</title>
+      <link>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</link>
+      <pubDate>Fri, 16 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</guid>
+      <description>
+
+&lt;hr /&gt;
+
+&lt;p&gt;Ce billet fait suite au précédent décrivant les principales techniques de développement mobile multiplateformes.&lt;/p&gt;
+
+&lt;p&gt;Voyons ici les &lt;strong&gt;principales solutions existantes&lt;/strong&gt; et leurs éditeurs:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://phonegap.com/&#34;&gt;PhoneGap&lt;/a&gt; (Adobe)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.appcelerator.com/&#34;&gt;Titanium&lt;/a&gt;  (Appcelerator)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.motorola.com/Business/US-EN/RhoMobile+Suite/Rhodes&#34;&gt;Rhodes&lt;/a&gt; (Rhomobile)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jquerymobile.com/&#34;&gt;jQuery Mobile&lt;/a&gt; (jQuery Foundation, association à but non lucratif)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sencha.com/products/touch&#34;&gt;Sencha Touch&lt;/a&gt; (Sencha)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.adobe.com/devnet/devices.html&#34;&gt;Flex mobile&lt;/a&gt; (Adobe)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xamarin.com/monotouch&#34;&gt;MonoTouch&lt;/a&gt; / &lt;a href=&#34;http://xamarin.com/monoforandroid&#34;&gt;Mono for Android&lt;/a&gt; (Xamarin)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.backelite.com/software/&#34;&gt;Wope&lt;/a&gt; (Backelite)&lt;/li&gt;
+&lt;li&gt;Développement hybride « maison »&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bien évidemment il existe de nombreux autres solutions / frameworks / librairies pour le développement multiplateformes, non décrites ici.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_phonegap.jpg&#34; alt=&#34;PhoneGap&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Pour la mise en place d’application hybride comportant des vues web(troisième approche).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gratuit, open source, supporte TOUTES les plateformes mobiles&lt;/strong&gt;, support payant en option.&lt;/li&gt;
+&lt;li&gt;Permet d’appeler les API natives des SDKs mobiles depuis le JavaScript (accès au contacts, caméra, gyroscope, GPS, base de données locale).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ne propose aucun composants visuels&lt;/strong&gt;! Phonegap est en fait une &amp;ldquo;boite&amp;rdquo; ou une &amp;ldquo;coque native&amp;rdquo; pour encapsuler des composants HTML5 et JavaScript.&lt;/li&gt;
+&lt;li&gt;PhoneGap N’EST PAS un framework JavaScript, il s’utilise AVEC un framework JavaScript complémentaire (au choix).&lt;/li&gt;
+&lt;li&gt;Alternatives : Trigger.io, Sencha Touch native packaging, coque native &amp;ldquo;fait maison&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_titanium.png&#34; alt=&#34;Titanium&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Propose une API &lt;strong&gt;100% JavaScript&lt;/strong&gt; (pas de HTML), le code est ensuite transformé en application native.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gratuit, API open source&lt;/strong&gt; (mais pas le compilateur), supporte uniquement iOS et Android, support payant en option.&lt;/li&gt;
+&lt;li&gt;Inclut un outil de cross-compilation &lt;strong&gt;ONLINE&lt;/strong&gt; qui demande un accès internet &lt;strong&gt;PERMANENT&lt;/strong&gt;. Les fichiers sources sont envoyés à un serveur propriétaire qui renvoie alors les binaires (JavaScript précompilé). Une machine virtuelle JavaScript exécute alors le code.&lt;/li&gt;
+&lt;li&gt;Inconvénients : syndrome de la boîte noire, difficultés pour débugger, problèmes éventuels de performances et de gestion mémoire.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_rhomobile.png&#34; alt=&#34;Rhodes&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Développement d’applications hybrides en &lt;strong&gt;Ruby et JavaScript-HTML&lt;/strong&gt;, fortement inspiré de Ruby On Rails.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gratuit, open source&lt;/strong&gt;, supporte iOS, Android, Windows Phone 7 et BlackBerry.&lt;/li&gt;
+&lt;li&gt;Peu de composants d’IHM fournis, nécessite un framework mobile JavaScript complémentaire (au choix).&lt;/li&gt;
+&lt;li&gt;Plutôt à destination des développeurs Ruby On Rails.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_jquery.png&#34; alt=&#34;jQuery Mobile&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Version mobile du framework &lt;strong&gt;JavaScript jQuery UI&lt;/strong&gt; (il contient donc la librairie jQuery).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gratuit, open source&lt;/strong&gt;, supporte &lt;strong&gt;TOUTES&lt;/strong&gt; les plateformes mobiles.&lt;/li&gt;
+&lt;li&gt;Développement en HTML (et JavaScript), plus simple de prise en main que Sencha Touch.&lt;/li&gt;
+&lt;li&gt;Performances moins bonnes que Sencha Touch, et interface reconnaissable qui ne ressemble guère aux widgets natifs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_sencha.png&#34; alt=&#34;Sencha Touch&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Version mobile du framework &lt;strong&gt;JavaScript ExtJS&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Compatible &lt;strong&gt;iOS, Android, BlackBerry&lt;/strong&gt;. Compatibilité Windows Phone 8 annoncée (mais pas WP7).&lt;/li&gt;
+&lt;li&gt;SDK &lt;strong&gt;open source et gratuit&lt;/strong&gt; pour le développement d’applications commerciales, payant pour une utilisation OEM. Environnement de développement payant (Sencha Architect).&lt;/li&gt;
+&lt;li&gt;Sencha Touch est &lt;strong&gt;Full JavaScript&lt;/strong&gt; (pas de HTML), le DOM est généré par la librairie JavaScript. La prise en main peut donc être plus déroutante que jQuery Mobile.&lt;/li&gt;
+&lt;li&gt;Framework &lt;strong&gt;MVC&lt;/strong&gt; et fortement orienté objet.&lt;/li&gt;
+&lt;li&gt;Bonnes performances pour un framework JavaScript&lt;/li&gt;
+&lt;li&gt;De nombreux composants d’IHM (widgets JavaScript assez proches du natif, en tout cas plus que jQuery Mobile).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_adobeAIR.jpg&#34; alt=&#34;Flash (Adobe AIR)&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Fait tourner des applications Flash sur une &lt;strong&gt;machine virtuelle embarquée&lt;/strong&gt; (Adobe AIR).&lt;/li&gt;
+&lt;li&gt;Compatible &lt;strong&gt;Android, iOS, et BlackBerry&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;SDK gratuit mais environnement de développement payant (Adobe Flash Builder).&lt;/li&gt;
+&lt;li&gt;Pas d’accès aux widgets natifs des plateformes, problèmes éventuels de performances et mémoire (comme toutes les solutions utilisant une machine virtuelle).&lt;/li&gt;
+&lt;li&gt;Le plugin Flash pour Safari Mobile étant abandonnée, la pérennité de cette technologie est incertaine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_Mono.png&#34; alt=&#34;Mono&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Permet de développer en &lt;strong&gt;C#.NET&lt;/strong&gt; sur Android et iOS en générant des applications natives.&lt;/li&gt;
+&lt;li&gt;La partie mobile de Mono est composé en fait de deux SDKs : &lt;strong&gt;Monotouch&lt;/strong&gt; (pour iOS, nécessite un Mac avec XCode), et &lt;strong&gt;Mono for Android&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Produit &lt;strong&gt;commercial payant&lt;/strong&gt; (399$ par plateforme).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ne masque pas les SDKs natifs sous-jacents&lt;/strong&gt;. On manipule des StoryBoards et Controllers sous iOS, ou des Activity sous Android, le tout en C#.&lt;/li&gt;
+&lt;li&gt;Seul le code métier peut être mutualisé entre iOS, Android et Windows Phone, toute la partie IHM reste spécifique à chaque plateforme.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_wope.jpg&#34; alt=&#34;Wope&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Edit du 28/11/2012&lt;/strong&gt; : la solution a évolué depuis mes tests datant de 2011 (cf. le commentaire du product owner wope ci-dessous).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;anciennement BKRender&lt;/li&gt;
+&lt;li&gt;Framework mobile HTML5 et JavaScript, plus un moteur de rendu.&lt;/li&gt;
+&lt;li&gt;Solution commerciale et payante.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Un serveur de rendu&lt;/strong&gt; génère un fichier html adapté et optimisé au terminal qui l’appelle.&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Les applications ont un rendu de site web, pas d’animations entre écrans mais un chargement de la page.&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Grande compatibilité au détriment de l’expérience utilisateur.&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;Permet de packager des applications pour déploiement sur les stores (applications hybrides donc)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_zepto.jpg&#34; alt=&#34;Zepto.js&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Pour &lt;strong&gt;optimiser les performances au besoin&lt;/strong&gt;, il peut être intéressant de mettre une place une solution &lt;strong&gt;hybride personnalisée&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Phonegap peut être utilisé pour &lt;strong&gt;prototyper&lt;/strong&gt;, on écrira ensuite le code natif dont on a besoin (et pas plus).&lt;/li&gt;
+&lt;li&gt;Les ponts JavaScript &amp;lt;-&amp;gt; SDK natif ne sont pas très compliqués à développer (chaque plateforme mobile le permet).&lt;/li&gt;
+&lt;li&gt;Considérer l’utilisation de &lt;strong&gt;&lt;a href=&#34;http://zeptojs.com/&#34;&gt;Zepto.js&lt;/a&gt;&lt;/strong&gt; à la place de jQuery (la syntaxe est la même). Zepto ne fonctionne que sur les navigateurs basés sur WebKit mais il est beaucoup plus léger. Les framework &lt;a href=&#34;http://xuijs.com/&#34;&gt;XUI&lt;/a&gt; et &lt;a href=&#34;http://quojs.tapquo.com/&#34;&gt;QuoJS&lt;/a&gt;
+sont d’autres alternatives crédibles.&lt;/li&gt;
+&lt;li&gt;On utilisera un &lt;strong&gt;framework JavaScript MVC&lt;/strong&gt; tel que &lt;a href=&#34;http://backbonejs.org/&#34;&gt;BackBone.js&lt;/a&gt; ou &lt;a href=&#34;http://angularjs.org/&#34;&gt;Angular&lt;/a&gt; pour structurer le code, faciliter les tests et la maintenance.&lt;/li&gt;
+&lt;li&gt;De même on pourra utiliser une librairie de &lt;strong&gt;templating JavaScript&lt;/strong&gt; telle que &lt;a href=&#34;http://icanhazjs.com/&#34;&gt;ICanHaz.js&lt;/a&gt; ou &lt;a href=&#34;http://mustache.github.com/&#34;&gt;Mustache&lt;/a&gt; .&lt;/li&gt;
+&lt;li&gt;De nombreuses micro-librairies Javascript permettent de gérer le scrolling et les gestures tactiles (QuoJS, iSCroll4, Mobile Boilerplate, Hammer.js, …).&lt;/li&gt;
+&lt;li&gt;Pour toutes ces librairies Javascript, on pourra trouver son bonheur sur le site &lt;a href=&#34;http://microjs.com/&#34;&gt;Microjs.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;conclusion:63a9e4e344bbe209be40dd2b35ebef45&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Il n’y a pas de solution miracle, chaque technologie/solution a ses avantages et inconvénients.&lt;/li&gt;
+&lt;li&gt;Aucune technologie multiplateforme ne permet d’être aussi performante que le développement natif tout en ayant un look-and-feel natif.&lt;/li&gt;
+&lt;li&gt;Le choix d’une technologie doit être un compromis entre différents facteurs :
+
+&lt;ul&gt;
+&lt;li&gt;Budget disponible&lt;/li&gt;
+&lt;li&gt;Nombre de plateformes cibles&lt;/li&gt;
+&lt;li&gt;Performances désirées&lt;/li&gt;
+&lt;li&gt;Type d’application&lt;/li&gt;
+&lt;li&gt;Connaissances des équipes de développement&lt;/li&gt;
+&lt;li&gt;Présence souhaitée ou non sur les magasins d’applications / fréquence des mises à jour&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deux nouveaux frameworks javascript mobile : LungoJS et Moobile</title>
+      <link>http://olivierguillet.com/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</link>
+      <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</guid>
+      <description>&lt;p&gt;Bonjour, aujourd’hui deux ajouts à la liste des &lt;strong&gt;frameworks javascript&lt;/strong&gt; pour webapp mobile : LungoJS et Moobile.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://goo.gl/GQkiM&#34;&gt;LungoJS&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/wO452&#34;&gt;Moobile&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;J’ai également mis à jour mon post &lt;a href=&#34;http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/&#34;&gt;listant les pages de démo des frameworks javascript&lt;/a&gt; avec les liens vers les nouvelles démos des frameworks suivants :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;JQuery Mobile&lt;/strong&gt; 1.1&lt;br /&gt;
+&lt;strong&gt;Sencha Touch&lt;/strong&gt; 2.0&lt;br /&gt;
+&lt;strong&gt;iUI&lt;/strong&gt; 0.4 beta 3&lt;br /&gt;
+&lt;strong&gt;Wink&lt;/strong&gt; 1.0&lt;br /&gt;
+&lt;strong&gt;Dojo Mobile&lt;/strong&gt; 1.7&lt;br /&gt;
+&lt;strong&gt;Kendo UI&lt;/strong&gt; Mobile&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Panorama des différentes plateformes mobiles pour smartphones et tablettes</title>
+      <link>http://olivierguillet.com/2012/02/panorama-plateformes-mobiles/</link>
+      <pubDate>Wed, 22 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/02/panorama-plateformes-mobiles/</guid>
+      <description>&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo-iOS.jpg&#34; alt=&#34;iOS&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;http://www.apple.com/fr/ios/&#34;&gt;iOS&lt;/a&gt; est le système d’exploitation intégré à la fois dans &lt;strong&gt;l’iPhone, l’iPod Touch et l’iPad&lt;/strong&gt;, et mis au point par &lt;strong&gt;Apple&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;iOS est dérivé de Mac OS X (et donc d’Unix), avec qui il partage le même framework, &lt;strong&gt;Cocoa&lt;/strong&gt;, et le langage de programmation associé l’&lt;strong&gt;Objective-C&lt;/strong&gt;.
+Objective-C est une surcouche du C, en y ajoutant la notion de &lt;strong&gt;programmation object&lt;/strong&gt;. Celle-ci est fortement inspiré de celle de SmallTalk, notamment au niveau des design patterns mis en œuvre (MVC, Key-Value Coding).&lt;/p&gt;
+
+&lt;p&gt;Le développement d’applications natives s’effectue exclusivement dans l’environnement &lt;a href=&#34;https://developer.apple.com/xcode/index.php&#34;&gt;Xcode&lt;/a&gt; (gratuit), sur ordinateur Mac.
+Apple fournit également un &lt;strong&gt;simulateur d’iPhone et d’iPad&lt;/strong&gt; avec son &lt;a href=&#34;https://developer.apple.com/devcenter/ios/index.action&#34;&gt;SDK iOS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_Android.png&#34; alt=&#34;Android&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;http://www.android.com/&#34;&gt;Android&lt;/a&gt; est le système d’exploitation conçu par &lt;strong&gt;Google&lt;/strong&gt; et l’&lt;a href=&#34;http://www.openhandsetalliance.com/&#34;&gt;Open Handset Alliance&lt;/a&gt;.
+Celui-ci équipe aujourd’hui des appareils très variés : smartphones, tablettes, TV, autoradios, montres digitales, …
+Android est gratuit pour les constructeurs d’appareils souhaitant l’utiliser, et partiellement open-source.
+Concrètement le système d’exploitation s’appuie sur un &lt;strong&gt;noyau Linux optimisé&lt;/strong&gt; pour un usage mobile, et sur une &lt;strong&gt;machine virtuelle Java&lt;/strong&gt; assez fortement modifiée, nommée &lt;strong&gt;Dalvik JVM&lt;/strong&gt;. Celle-ci n’exécute pas les .class habituels mais des fichiers portant l’extension .dex, compilés différemment et optimisés par le &lt;a href=&#34;http://developer.android.com/sdk/index.html&#34;&gt;SDK Android&lt;/a&gt;.
+Le développement se fait donc en Java, mais sur cette JVM spécifique à Android. Il n’est de fait pas possible d’utiliser n’importe quelle librairie Java dans une application Android, les librairies Android devant être compilées pour la JVM Dalvik.&lt;/p&gt;
+
+&lt;p&gt;Il est possible d’utiliser divers IDE Java pour développer et compiler une application Android, mais Google fournit un &lt;a href=&#34;http://developer.android.com/sdk/eclipse-adt.html&#34;&gt;plugin Eclipse&lt;/a&gt;, dont il serait dommage de se passer.&lt;/p&gt;
+
+&lt;p&gt;A noter que Motorola fourni également un IDE dédié au développement Android, regroupant Eclipse et le plugin Android de Google, nommé &lt;a href=&#34;http://developer.motorola.com/docstools/motodevstudio/&#34;&gt;Motodev Studio&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il est également possible de développer en code C++ natif, via le &lt;a href=&#34;http://developer.android.com/sdk/ndk/index.html&#34;&gt;NDK&lt;/a&gt; (Native Development Kit), pour les applications ayant un besoin critique de performances tels les jeux vidéos en 3D.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo-Windows-Phone-Mango.jpg&#34; alt=&#34;Windows Phone&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/windowsphone/fr-fr/&#34;&gt;Windows Phone 7&lt;/a&gt; a été lancé en novembre 2010 par &lt;strong&gt;Microsoft&lt;/strong&gt;, il succède à Windows Mobile en étant plus orienté grand public. Il est basé sur un noyau &lt;a href=&#34;http://fr.wikipedia.org/wiki/Windows_CE&#34;&gt;Windows CE&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cet OS mobile équipe uniquement des smartphones, c’est le futur Windows 8 qui est annoncé comme pouvant équiper des tablettes à sa sortie.&lt;/p&gt;
+
+&lt;p&gt;Windows Phone 7 dispose d’une IHM conçue nativement pour écrans tactiles multitouch, dénommée &lt;strong&gt;Modern UI&lt;/strong&gt; (anciennement Metro), qui se démarque des autres IHM mobiles par l’utilisation de tuiles à la place d’icônes. Ces tuiles peuvent afficher des informations en temps réel, à la manière des widgets Android, et couvrent toute la surface d’affichage, il n’y a donc pas de véritable fond d’écran.&lt;/p&gt;
+
+&lt;p&gt;Le développement d’applications pour Windows Phone 7 est possible via deux langages au choix : &lt;strong&gt;C#&lt;/strong&gt; et &lt;strong&gt;VB.NET&lt;/strong&gt;. Windows Phone 7 supporte deux plateformes de développement, que l’on peut mixer dans la même application, et toutes deux bâties sur le &lt;strong&gt;.NET Compact Framework&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Silverlight&lt;/strong&gt;, utilisée en général pour le développement d’applications
+de gestion.  Les IHM sont donc décrites en XAML. Windows Phone
+utilise une version modifiée de Silverlight, adaptée aux spécificités
+des appareils mobiles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;XNA&lt;/strong&gt;, la plateforme dédié au développement de jeux 2D et 3D, ainsi que
+les traitements audio.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Microsoft propose ses &lt;a href=&#34;http://www.microsoft.com/fr-fr/download/details.aspx?id=13890&#34;&gt;Windows Phone Developer Tools&lt;/a&gt; pour le développement des applications. Ce package, gratuit, comprend :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Visual Studio 2010 Express&lt;/strong&gt;, la version légère et gratuite de Visual
+Studio 2010.&lt;/li&gt;
+&lt;li&gt;un émulateur Windows Phone&lt;/li&gt;
+&lt;li&gt;Expression Blend, pour la création des écrans.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Côté navigateur internet, celui-ci était initialement un mix entre IE7 et IE8 ne proposant pas de support HTML5. Depuis la sortie de Windows Phone 7.5 (Mango) celui-ci est basé sur IE9 et supporte partiellement HTML5.&lt;/p&gt;
+
+&lt;p&gt;Le futur Windows Phone 8 sera basé sur un noyau Windows NT,  et plusieurs composants de l’OS seront partagés avec Windows 8, ce qui autorisera un portage aisé d’applications entre les deux systèmes. Il est annoncé comme étant rétro compatible avec les applications Windows Phone 7.&lt;/p&gt;
+
+&lt;p&gt;Enfin son navigateur sera basé sur IE10, proposant une compatibilité accrue avec HTML5.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_Blackberry_OS.jpg&#34; alt=&#34;BlackBerry&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Le système BlackBerry, du fabriquant canadien &lt;a href=&#34;http://www.rim.com/&#34;&gt;RIM&lt;/a&gt; (Research In Motion), fut un précurseur sur le marché des PDA et smartphones. Il fut le premier à proposer la &lt;strong&gt;notification instantanée d’emails&lt;/strong&gt;, en mode push.&lt;/p&gt;
+
+&lt;p&gt;BlackBerry OS optimise également l’utilisation mobile en &lt;strong&gt;compressant les pages web&lt;/strong&gt;, ainsi que les pièces jointes des mails, et permet une &lt;strong&gt;sécurisation&lt;/strong&gt; efficace des échanges.&lt;/p&gt;
+
+&lt;p&gt;En septembre 2010, RIM a lancé un nouveau système d’exploitation, BlackBerry Tablet OS, qui équipe aujourd’hui uniquement sa tablette BlackBerry PlayBook, mais qui devrait à terme remplacer totalement son BlackBerry OS sous le nom de &lt;strong&gt;BlackBerry 10&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pour &lt;a href=&#34;https://bdsc.webapps.blackberry.com/devzone/&#34;&gt;développer sur BlackBerry&lt;/a&gt;, de nombreuses possibilités existent :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;le &lt;a href=&#34;https://bdsc.webapps.blackberry.com/java/&#34;&gt;SDK Java&lt;/a&gt;, et le
+plugin Eclipse associé, les BlackBerrys disposant d’une JVM
+spécifique.&lt;/li&gt;
+&lt;li&gt;le &lt;a href=&#34;https://bdsc.webapps.blackberry.com/air/&#34;&gt;SDK pour Adobe AIR&lt;/a&gt;,
+afin de développer des applications Flash en Action Script.&lt;/li&gt;
+&lt;li&gt;un nouveau framework présenté fin 2010, &lt;a href=&#34;https://bdsc.webapps.blackberry.com/html5/&#34;&gt;BlackBerry
+WebWorks&lt;/a&gt;, permet de
+développer des applications web en HTML5/CSS3 et javascript. La
+plateforme permet de packager des applications BlackBerry et de les
+déployer sur le BlackBerry App World.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Deux possibilités supplémentaires existent pour réaliser des applications dédiées à la tablette BlackBerry PlayBook, et aux futurs smartphones de RIM :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;le &lt;a href=&#34;https://bdsc.webapps.blackberry.com/native/&#34;&gt;SDK natif&lt;/a&gt;, pour
+développer en C/C++ via un EDI fourni par RIM.&lt;/li&gt;
+&lt;li&gt;enfin il est possible de packager des &lt;a href=&#34;https://bdsc.webapps.blackberry.com/android/&#34;&gt;applications
+Android&lt;/a&gt; pour les faire
+tourner sur BlackBerry Tablet OS, RIM espérant ainsi pallier au
+manque d’applications sur sa tablette.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_Bada.jpg&#34; alt=&#34;Bada&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;http://www.bada.com/&#34;&gt;Bada&lt;/a&gt; est le système d’exploitation pour mobiles mis au point par &lt;strong&gt;Samsung&lt;/strong&gt; pour équiper une partie de ses smartphones (d’autres tournent sur Android ou Windows Phone). Bada OS est une évolution pour le haut de gamme du système SHP (Samsung Handheld Platform) OS équipant de nombreux appareil Samsung de milieu de gamme. Tous les smartphones Samsung équipés du système Bada ont un nom commençant par &lt;em&gt;Samsung Wave&lt;/em&gt;. Il devrait disparaître courant 2013 de cette gamme de smartphone au profit de Tizen.&lt;/p&gt;
+
+&lt;p&gt;Le système intègre la technologie &lt;strong&gt;TouchWiz&lt;/strong&gt; pour l’interface utilisateur, la même que sur les smartphones Android du constructeur coréen.  Le &lt;a href=&#34;http://developer.bada.com/apis/index.do&#34;&gt;développement&lt;/a&gt; se fait grâce à un SDK en C++ fourni par Samsung et un IDE basé sur Eclipse.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_symbian_OS.png&#34; alt=&#34;Symbian&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Nokia créa Symbian OS en 1998 en compagnie de Panasonic, Psion,  Ericsson et Motorola. Nokia fut ensuite le principal utilisateur de Symbian pendant de nombreuses années pour équiper ses téléphones mobiles et smartphone,  et racheta tous les droits du consortium &lt;strong&gt;Symbian Ltd&lt;/strong&gt; en 2008.&lt;/p&gt;
+
+&lt;p&gt;Aujourd’hui, la plateforme pour téléphones mobiles &lt;a href=&#34;http://symbian.nokia.com/&#34;&gt;Symbian&lt;/a&gt; succède à &lt;strong&gt;Symbian OS et Nokia Series 60&lt;/strong&gt;, en unifiant ces deux composantes système.&lt;/p&gt;
+
+&lt;p&gt;Auparavant, Symbian OS nécessitait une surcouche pour présenter une ihm aux utilisateurs. Le framework Series 60 de Nokia était alors un de ceux couramment utilisés dans ce but, en compagnie de UIQ et JavaME. Le développement, réputé difficile, était réalisé en C++.  Il peut aujourd’hui être fait principalement avec le framework QT, toujours en C++, via les IDE QT Creator ou Carbide.&lt;/p&gt;
+
+&lt;p&gt;La plateforme Symbian, en perte de vitesse,  a été cédée à Accenture en 2011 suite au partenariat de Nokia et Microsoft autour de Windows Phone.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_WebOS.png&#34; alt=&#34;webOS&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Ce système d’exploitation mobile propriétaire, basé sur un noyau Linux 2.6, a été conçu par &lt;a href=&#34;https://developer.palm.com/&#34;&gt;Palm&lt;/a&gt;, fabriquant américain de PDA, pour équiper ses téléphones mobiles. Suite au rachat de Palm par HP en 2010, le système webOS dans sa dernière version 3.0 équipe également la tablette &lt;strong&gt;HP TouchPad&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Les applications sont développées principalement en &lt;strong&gt;HTML5, CSS et javascript&lt;/strong&gt; (d’où le nom de la plateforme) grâce au SDK nommé &lt;a href=&#34;https://developer.palm.com/content/resources/develop/quick_start_javascript.html&#34;&gt;Enyo&lt;/a&gt;. Il existe également un &lt;a href=&#34;https://developer.palm.com/content/resources/develop/quick_start_c.html&#34;&gt;kit de développement C/C++&lt;/a&gt; pour le développement OpenGL, principalement jeux vidéos.&lt;/p&gt;
+
+&lt;p&gt;En août 2011, devant les faibles ventes de ses appareils, HP a annoncé qu’il arrêtait la fabrication et la commercialisation d’appareils sous webOS. Dans la foulée le constructeur a ouvert le code du système webOS en &lt;a href=&#34;http://www.openwebosproject.org/&#34;&gt;open source&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo-Firefox_OS.jpg&#34; alt=&#34;Firefox OS&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Anciennement nommé &lt;strong&gt;Boot To Gecko&lt;/strong&gt;, &lt;a href=&#34;http://www.mozilla.org/en-US/firefoxos/&#34;&gt;Firefox OS&lt;/a&gt; est un système d’exploitation pour smartphones et tablette crée par &lt;strong&gt;Mozilla&lt;/strong&gt;, et entièrement &lt;strong&gt;open-source&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il a été annoncé en 2011 et est toujours en cours de développement.&lt;/p&gt;
+
+&lt;p&gt;L’objectif est de proposer un OS mobile reposant sur des &lt;strong&gt;standarts ouverts du Web&lt;/strong&gt; :
+_ un noyau Gonk, basé sur un simple &lt;strong&gt;Linux&lt;/strong&gt;, partageant quelques composants en commun avec le noyau Android (pilotes d’accès au matériel).
+_ un &lt;strong&gt;runtime Javascript nommé Gecko&lt;/strong&gt;
+_ et une interface utilisateur entièrement écrite en &lt;strong&gt;HTML5/CSS3 nommée Gaïa&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A noter que le runtime Gecko peut s’appuyer sur d’autres systèmes que Gonk, notamment Android (avec des restrictions sur les fonctionnalités).&lt;/p&gt;
+
+&lt;p&gt;Le développement d’application se fera vous l’aurez compris en &lt;strong&gt;Javascript / HTML5.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_Tizen.jpg&#34; alt=&#34;Tizen&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;a href=&#34;https://www.tizen.org/&#34;&gt;Tizen&lt;/a&gt; est un projet de la &lt;strong&gt;Fondation Linux&lt;/strong&gt;, dont le développement est assuré par Intel et Samsung.
+Il résulte d’un long processus de mise en place d’un OS mobile basé sur Linux, via les projets LiMo, Moblin, Maemo (par Nokia), MeeGo (par Nokia et Intel).&lt;/p&gt;
+
+&lt;p&gt;Tout comme Firefox OS et WebOS, il est open-sources et &lt;strong&gt;repose sur le couple Linux / HTML5&lt;/strong&gt;, les applications crées devant mêmes être compatibles entres ces différentes plateformes ouvertes.&lt;/p&gt;
+
+&lt;p&gt;Les autres composant logiciels de l’OS sont la &lt;strong&gt;librairie EFL&lt;/strong&gt; (Enlightenment Foundation Libraries) pour la gestiongraphique, et le &lt;strong&gt;runtime Webkit&lt;/strong&gt; pour la partie web.&lt;/p&gt;
+
+&lt;p&gt;Le projet est majoritairement porté par Nokia, Intel et Samsung, après le quasi-abandon de Bada OS par ce dernier. Il va d’ailleurs remplacer Bada sur la gamme Wave du constructeur Coréen.&lt;/p&gt;
+
+&lt;p&gt;Ce système a pour ambition de &lt;strong&gt;créer un écosystème ouvert&lt;/strong&gt;, les pilotes développés étant libres eux aussi (FireFox OS utilise ceux d’Android).&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Les différents types d’applications mobiles : natives, web apps, hybrides, Flash</title>
+      <link>http://olivierguillet.com/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</link>
+      <pubDate>Sat, 18 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</guid>
+      <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;applications-natives:4ff034aad68b01e383678d84ef26f996&#34;&gt;Applications natives&lt;/h2&gt;
+
+&lt;p&gt;Les applications natives sont des logiciels conçus spécifiquement pour une plate-forme mobile, en utilisant le &lt;strong&gt;SDK&lt;/strong&gt; propre à celle-ci. Les applications ainsi crées sont ensuite téléchargeables depuis une plateforme dédiée au système, généralement un magasin d’application type App Store d’Apple ou Android Market.&lt;/p&gt;
+
+&lt;p&gt;Ces applications permettent de tirer parti de toute la puissance et toutes les possibilités du device mobile : accélération matérielle, capteurs, caméra, accès aux contacts, au fonctions de téléphonie, etc.&lt;/p&gt;
+
+&lt;h2 id=&#34;web-apps:4ff034aad68b01e383678d84ef26f996&#34;&gt;Web Apps&lt;/h2&gt;
+
+&lt;p&gt;Il s’agit de &lt;strong&gt;sites web optimisés pour mobile&lt;/strong&gt;, souvent conçus pour ressembler à de « vraies » applications.
+On accède à ces applications web via le navigateur internet du device mobile.
+Aujourd’hui grâce notamment au support d‘&lt;strong&gt;HTML5 et de CSS3&lt;/strong&gt; il est possible d’aller assez loin dans l’utilisation des capacités des devices. HTML5 permet notamment de gérer le multitouch, la géolocalisation, l’utilisation de l’accéléromètre, la mise en cache de ressources statiques, et même la synchronisation offline, après que l’appareil ait perdu puis retrouvé sa connexion. HTML5 gère également le stockage de données en local.
+Google et Facebook notamment utilisent avec succès cette technologie et proposent des version mobiles de leurs applications web.&lt;/p&gt;
+
+&lt;p&gt;Ces applications web peuvent être génériques (toute plate-forme mobile) ou bien dédiées à un type de support particulier, par exemple beaucoup d’applications et de frameworks pour mobiles ne fonctionnent que sur un navigateur basé sur Webkit (iOS, Android, BlackBerry&amp;gt;=6.0, WebOS), exemple : &lt;a href=&#34;https://touch.www.linkedin.com/&#34;&gt;touch.www.linkedin.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Le système iOS permet d’utiliser une web app à la manière d’une application, en plaçant un raccourci vers le site web mobile directement sur le bureau, avec une icône. Le navigateur lance alors la web app en plein écran, comme une vraie application.
+Android gère en partie ce mécanisme, il permet la mise en raccourci sur le bureau avec icône, mais le navigateur ne se lance pas en plein écran.&lt;/p&gt;
+
+&lt;h2 id=&#34;applications-hybrides:4ff034aad68b01e383678d84ef26f996&#34;&gt;Applications hybrides&lt;/h2&gt;
+
+&lt;p&gt;Une application hybride est un &lt;strong&gt;mélange de code natif et d’affichage de vues HTML/javascript&lt;/strong&gt;. Concrètement toutes les plateformes mobiles proposent un composant de type WebView, permettant d’afficher du contenu web soit sur une partie de l’écran, soit en plein écran, et en utilisant le moteur HTML du navigateur intégré au système.
+Ces applications hybrides peuvent être distribuées sur les stores des systèmes mobiles.&lt;/p&gt;
+
+&lt;p&gt;Plusieurs stratégies sont alors possibles, selon que l’on place le curseur plus du côté natif ou plus du côté HTML :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ne réaliser que certains écrans voir même que certains composants
+d’IHM en HTML.&lt;/li&gt;
+&lt;li&gt;réaliser touts les écrans en HTML mais garder la logique applicative
+en code natif, notamment les effets de transitions entre écrans et la
+gestion du scrolling.&lt;/li&gt;
+&lt;li&gt;réaliser les écrans en HTML, et les transitions / scrolling en
+javascript. Le code natif peut alors se cantonner à quelques
+composants techniques très ciblés. De la même manière selon les
+applications la logique métier peut être codée en javascript ou bien
+en code natif.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Quelques exemples d’applications hybrides :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;LinkedIn&lt;/li&gt;
+&lt;li&gt;Microsoft Bing pour mobiles&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;applications-flash:4ff034aad68b01e383678d84ef26f996&#34;&gt;Applications Flash&lt;/h2&gt;
+
+&lt;p&gt;Flash Builder / Flex en version 4.5 permettent de packager des applications Android, iOS, et BlackBerry Tablet OS.
+Concrètement ces applications Flash &lt;strong&gt;embarquent le runtime AIR&lt;/strong&gt; dans leur code.
+Comme pour les applications HTML5/javascript il s’agit d’une solution de développement multiplateformes, qui permet d’accéder à la plupart des ressources des smartphones et tablettes : multitouch, accéléromètre, GPS, bases de données locales SQLite.&lt;/p&gt;
+
+&lt;p&gt;Attention cependant Adobe a officiellement &lt;strong&gt;stoppé le développement du SDK Flex pour mobile&lt;/strong&gt; et l’a offert à la fondation Apache en novembre 2011, on peut donc légitimement s’interroger sur la pérennité de cette technologie, surtout face à HTML5.&lt;/p&gt;
+
+&lt;h2 id=&#34;politique-d-approbation-apple:4ff034aad68b01e383678d84ef26f996&#34;&gt;Politique d’approbation Apple&lt;/h2&gt;
+
+&lt;p&gt;Apple a modifié à plusieurs reprises sa politique d’approbation des applications iOS, menant de nombreux développeurs à la confusion.
+Le 8 avril 2010, lors de l’annonce de la sortie du SDK iOS 4.0, Apple annonça que seuls les applications développées en Objective-C, C, C++ ou javascript seraient autorisées. Cela stoppait toute possibilité d’applications écrites en Flash, ainsi que de nombreuses solutions de développement multiplateformes telles que Titanium ou MonoTouch.
+Le 9 septembre 2010, Apple a modifié ses conditions de services pour autoriser &lt;strong&gt;toutes les technologies de développement d’applications iOS&lt;/strong&gt;, à la seule condition que ces applications ne téléchargent pas de code.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;eléments-de-comparaison:4ff034aad68b01e383678d84ef26f996&#34;&gt;Eléments de comparaison&lt;/h1&gt;
+
+&lt;h2 id=&#34;coûts-de-mise-en-œuvre:4ff034aad68b01e383678d84ef26f996&#34;&gt;Coûts de mise en œuvre&lt;/h2&gt;
+
+&lt;p&gt;Développer une application native pour plusieurs plateformes mobiles peut coûter très cher, de part la multitude de langages et technologies mises en œuvre.
+Selon le nombre de plateformes cibles, une technologie web ou même hybride sera souvent moins coûteuse . De plus il sera souvent plus simple de disposer de développeurs maîtrisant les technologies web, que les diverses plateformes mobiles.&lt;/p&gt;
+
+&lt;h2 id=&#34;qualité-rapidité-des-applications:4ff034aad68b01e383678d84ef26f996&#34;&gt;Qualité, rapidité des applications&lt;/h2&gt;
+
+&lt;p&gt;Difficile de rivaliser avec les applications natives! Celles-ci seront presque toujours plus rapides.
+Mais cela dépend fortement du type d’application en jeu et de ses fonctionnalités.
+L’autre point à ne pas négliger est que les utilisateurs sont habitués au look’n&amp;rsquo;feel natif, et qu’il peut être dangereux de trop s’en écarter.&lt;/p&gt;
+
+&lt;h2 id=&#34;publication-et-mises-à-jour:4ff034aad68b01e383678d84ef26f996&#34;&gt;Publication et mises à jour&lt;/h2&gt;
+
+&lt;p&gt;Une importante contrainte des applications natives est que celles-ci doivent être approuvées avant diffusion sur leur store respectif (sauf pour Android), ce qui peut s’avérer long et contraignant. Une application hybride permet de limiter ce désagrément, et une web app de s’en affranchir complètement.
+Le même problème se pose pour les mises à jour, il n’est souvent pas possible de diffuser un patch correctif en urgence ou même rapidement sur une application native.&lt;/p&gt;
+
+&lt;h2 id=&#34;monétisation:4ff034aad68b01e383678d84ef26f996&#34;&gt;Monétisation&lt;/h2&gt;
+
+&lt;p&gt;Les magasins d’applications permettent très facilement de vendre les applications, mêmes si Apple, Google et consorts prélèvent leur part sur les prix de vente, généralement autour de 30%.
+Même si les stores d’applications web comment timidement à apparaître, leur usage est encore très restreint.
+Les stores servent aussi de moteur de recherche et de vitrines pour les applications, et permettent ainsi de les mettre en avant et de les faire découvrir.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion:4ff034aad68b01e383678d84ef26f996&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Il n’y a pas aujourd’hui de solution miracle, le choix d’une technologie applicative dépendra de &lt;strong&gt;plusieurs facteurs déterminants&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;type d’application (jeux 3D, appli « de gestion », journal en ligne,
+application devant accéder à la caméra ou aux contacts internes du
+téléphone, …)&lt;/li&gt;
+&lt;li&gt;nombre de plateformes mobiles ciblées : plus elles seront nombreuses
+plus les solutions multiplateformes seront intéressantes et rapides à
+mettre en place budget : en général les solutions multiplateformes
+sont moins coûteuses à mettre en place&lt;/li&gt;
+&lt;li&gt;nécessité ou non d’une présence sur les marchés d’applications&lt;/li&gt;
+&lt;li&gt;fréquence des mises à jour (attention au délai d’approbation,
+notamment par Apple) connaissances des équipes de développement : il
+est généralement plus simple de disposer de développeurs maîtrisant
+HTML5/javascript ou Flash que connaissant à la fois java,
+Objective-C, C# voir C++.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Widget de sélection par scrolling horizontal pour Android</title>
+      <link>http://olivierguillet.com/2012/01/widget-scrolling-horizontal-android/</link>
+      <pubDate>Fri, 20 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/01/widget-scrolling-horizontal-android/</guid>
+      <description>&lt;p&gt;A partir du composant Gallery et d’une image, j’ai fait un widget de sélection horizontal tout simple, réutilisable, à insérer dans une application :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lh4.ggpht.com/9buF17Y7R8Y6ZZpriKS9Hq995Cm1ivQXHYBRbdZM7hdtUkD5i5fE8zEkEekCeGVXUg=h900&#34; alt=&#34;Horizontal Widget&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La démo est disponible sur &lt;a href=&#34;http://goo.gl/XPuAf&#34;&gt;Android Market&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Code source disponible sur GitHub: &lt;a href=&#34;https://github.com/olivierguillet/Horizontal-Widget-Android&#34;&gt;Horizontal Widget Android&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nouveau framework javascript pour webapp mobile : jQ.Mobi</title>
+      <link>http://olivierguillet.com/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</link>
+      <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</guid>
+      <description>&lt;p&gt;Voici un nouveau venu dans la cour des &lt;strong&gt;frameworks JavaScript&lt;/strong&gt; pour webapp mobile : jQ.Mobi&lt;/p&gt;
+
+&lt;p&gt;Celui-ci est &lt;strong&gt;plus léger&lt;/strong&gt; que les frameworks existants (jQuery Mobile, Sencha Touch, …) et annoncé comme étant &lt;strong&gt;plus rapide&lt;/strong&gt;.
+jQ.Mobi est encore en beta et pour l’instant moins fourni en fonctionnalités que ses concurrents.
+En tout cas cela parait prometteur, à suivre de près donc !&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://goo.gl/mLgGH&#34;&gt;jQ.Mobi&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;J’ai également complété mon &lt;a href=&#34;http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/&#34;&gt;post précédent&lt;/a&gt; listant les pages de démo des frameworks JavaScript pour webapp mobile.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Natif, hybride, web app : comparaison des méthodes de scrolling sur application Android</title>
+      <link>http://olivierguillet.com/2012/01/comparaison-scrolling-application-android/</link>
+      <pubDate>Tue, 10 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/01/comparaison-scrolling-application-android/</guid>
+      <description>&lt;p&gt;Un pattern récurrent dans les applications mobiles consiste à afficher une liste d’items, avec éventuellement un header et/ou un footer fixe, la liste étant scrollable entre ce header et ce footer.
+En code Android natif cela est très facile à mettre en place avec deux TextView et une simple ListView, mais en HTML pour un site mobile ou une webapp cela peut se compliquer.&lt;/p&gt;
+
+&lt;p&gt;En effet, cela devrait se faire facilement en HTML5 en positionnant le header et le footer en &lt;strong&gt;position:fixed&lt;/strong&gt;, et en faisant scroller la liste avec une propriété CSS &lt;strong&gt;overflow:scroll&lt;/strong&gt;.
+&lt;strong&gt;Problème&lt;/strong&gt; : bien que les navigateurs Android et iOS soient basés sur le moteur WebKit, ils ne supportaient pas ces propriétés jusque récemment. Leur support est apparu avec &lt;strong&gt;iOS en version 5.0 et Android en version 2.2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Plusieurs librairies javascript ont donc été développées pour apporter ce positionnement fixe et ce scrolling des listes, en imitant le &lt;strong&gt;scrolling inertiel natif&lt;/strong&gt; des systèmes Android et iOS. Nous allons donc tester les plus matures :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;la plus connue, la librairie iScroll de Matteo Spinelli&lt;/li&gt;
+&lt;li&gt;Scrollability, la librairie développé par Joey Hewitt, ancien employé
+chez Facebook et développeur à la fois de l’application pour Iphone
+et de l’application web mobile&lt;/li&gt;
+&lt;li&gt;la librairie TouchSCroll de David Aurelio&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Pour tester cela j’ai fait une petite appli Android présentant 6 écrans :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ListView native Android&lt;/li&gt;
+&lt;li&gt;LinearLayout comprenant un header et un footer natif, et une liste d’items HTML dans une WebView entre les deux ( solution hybride, c’est le système Android qui gère le scroll)&lt;/li&gt;
+&lt;li&gt;WebView appelant une page HTML5, le scrolling est géré en CSS3&lt;/li&gt;
+&lt;li&gt;WebView appelant une page HTML5, le scrolling est géré par la librairie Javascript iScroll4&lt;/li&gt;
+&lt;li&gt;WebView appelant une page HTML5, le scrolling est géré par la librairie Javascript Scrollability&lt;/li&gt;
+&lt;li&gt;WebView appelant une page HTML5, le scrolling est géré par la librairie Javascript TouchSCroll&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;La démo est disponible sur &lt;a href=&#34;http://goo.gl/G3VKl&#34;&gt;Android Market&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Les tests iPhone ont été fait en appelant directement les pages de tests suivantes :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://goo.gl/82L29&#34;&gt;HTML5 / CSS3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://goo.gl/J5rLX&#34;&gt;iScroll4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://goo.gl/CF4ob&#34;&gt;Scrollability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://goo.gl/2wbce&#34;&gt;TouchScroll&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Voici le résultat des tests sur cette appli :&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Android 2.3.4 (ZTE Blade)&lt;/th&gt;
+&lt;th&gt;iOS 5.0.1 (iPhone3GS)&lt;/th&gt;
+&lt;th&gt;iOS 4.2.1 (iPhone3G)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Natif&lt;/td&gt;
+&lt;td&gt;très rapide&lt;br&gt;     bonne inertie du scrolling&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;ScrollView&lt;/td&gt;
+&lt;td&gt;très rapide&lt;br&gt;     bonne inertie du scrolling&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;HTML5&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     les scrollbars apparaissent sur tout l&amp;rsquo;écran&lt;br&gt;     la liste ne s&amp;rsquo;arrête pas en haut du footer mais passe sous   celui-ci&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;scrolling OK&lt;br&gt;     les scrollbars apparaissent sur tout l&amp;rsquo;écran&lt;br&gt;     la liste ne s&amp;rsquo;arrête pas en haut du footer mais passe sous   celui-ci&lt;br&gt;     peu d&amp;rsquo;inertie&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;footer non fixe !&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;iScroll4&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     rebond en fin de scroll OK&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     rebond en fin de scroll OK&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     rebond en fin de scroll OK&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Scrollability&lt;/td&gt;
+&lt;td&gt;aucune   inertie&lt;br&gt;     scrolling saccadé&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     rebond en fin de scroll OK&lt;/td&gt;
+&lt;td&gt;scrolling et inertie légèrement   saccadés&lt;br&gt;     rebond en fin de scroll OK&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;TouchScroll&lt;/td&gt;
+&lt;td&gt;scrolling et   inertie OK&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;scrolling et inertie légèrement   saccadés&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;La bonne surprise est la librairie &lt;strong&gt;iScroll4&lt;/strong&gt; qui est la seule à fonctionner sur toutes les plateformes de test si on souhaite une compatibilité maximale. De plus elle permet d’autres fonctionnalités qu’un simple scrolling, notamment le &amp;ldquo;&lt;a href=&#34;http://cubiq.org/dropbox/iscroll4/examples/pull-to-refresh/&#34;&gt;pull to refresh&lt;/a&gt;&amp;rdquo;.&lt;br /&gt;
+On pourra éventuellement détecter les versions des navigateurs, et utiliser iScroll uniquement si iOS&amp;lt;=4.0 ou Android&amp;lt;=2.2.&lt;br /&gt;
+Enfin à l&amp;rsquo;avenir on peut espérer que le couple HTML5/CSS3 fonctionnera correctement sur toutes les plateformes, et que l&amp;rsquo;on pourra se passer de ces librairies javascript.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Codes sources disponibles sur GitHub:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/olivierguillet/Scroll-Demo-Android&#34;&gt;client Android&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/olivierguillet/Scroll-Demo-HTML5&#34;&gt;pages HTML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Testez les frameworks javascript pour mobile en 5 minutes</title>
+      <link>http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/</link>
+      <pubDate>Wed, 14 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/</guid>
+      <description>&lt;p&gt;J’ai fait une compilation de liens vers les pages de démo des &lt;strong&gt;principaux frameworks JavaScript&lt;/strong&gt; pour vos webapps mobiles. Cela me servira également de bookmarking.&lt;/p&gt;
+
+&lt;p&gt;Donc bon effectivement vous ne les testerez surement pas tous en 5 minutes, mais vous pourrez rapidement vous faire une petite idée de ce que chacun peut faire, et surtout de la façon dont ils se comportent sur différents mobiles. Il ne faut pas perdre de vue qu’ils ne supportent pas tous les mêmes plate-formes, certains voir la plupart ne fonctionnent que sur les navigateurs mobiles issus de &lt;strong&gt;webkit&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Enfin bon je vous laisse tester :)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://goo.gl/ni5qT&#34;&gt;jQuery Mobile 1.1.0&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/GTI1G&#34;&gt;Sencha Touch 2.0&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/BthmG&#34;&gt;iUI&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/tfu14&#34;&gt;jQTouch&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/B9qKr&#34;&gt;Joshfire&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/CBMbY&#34;&gt;Jo&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/d7Qa8&#34;&gt;Wink&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/atNyk&#34;&gt;The M Project&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/rivlO&#34;&gt;BkRender&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/FtqCu&#34;&gt;DHTMLX Touch&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/qLzeP&#34;&gt;Dojo Mobile&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/zQMgT&#34;&gt;Kendo UI&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/mLgGH&#34;&gt;jQ.Mobi&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Nouveau&lt;/strong&gt; : &lt;a href=&#34;http://goo.gl/GQkiM&#34;&gt;LungoJS&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Nouveau&lt;/strong&gt; : &lt;a href=&#34;http://goo.gl/wO452&#34;&gt;Moobile&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Il y en a bien sûr d’autres que je me ferai un plaisir d’ajouter à cette liste.&lt;/p&gt;
+
+&lt;p&gt;Pour ma part je suis déçu par jQuery Mobile, sur mon Android 2.3 c’est une catastrophe au niveau des transitions entre pages. La release de la version 1.0 n’a rien arrangé à ce niveau là. Je pensais l’utiliser depuis quelques temps, mais là pour moi c’est rédhibitoire.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

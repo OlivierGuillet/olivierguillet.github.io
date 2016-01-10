@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Olivier Guillet | Cyberculture</title>
+    <link>http://olivierguillet.com/tags/web/</link>
+    <description>Recent content in Web on Olivier Guillet | Cyberculture</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 May 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://olivierguillet.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Deux nouveaux frameworks javascript mobile : LungoJS et Moobile</title>
+      <link>http://olivierguillet.com/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</link>
+      <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</guid>
+      <description>&lt;p&gt;Bonjour, aujourd’hui deux ajouts à la liste des &lt;strong&gt;frameworks javascript&lt;/strong&gt; pour webapp mobile : LungoJS et Moobile.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://goo.gl/GQkiM&#34;&gt;LungoJS&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/wO452&#34;&gt;Moobile&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;J’ai également mis à jour mon post &lt;a href=&#34;http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/&#34;&gt;listant les pages de démo des frameworks javascript&lt;/a&gt; avec les liens vers les nouvelles démos des frameworks suivants :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;JQuery Mobile&lt;/strong&gt; 1.1&lt;br /&gt;
+&lt;strong&gt;Sencha Touch&lt;/strong&gt; 2.0&lt;br /&gt;
+&lt;strong&gt;iUI&lt;/strong&gt; 0.4 beta 3&lt;br /&gt;
+&lt;strong&gt;Wink&lt;/strong&gt; 1.0&lt;br /&gt;
+&lt;strong&gt;Dojo Mobile&lt;/strong&gt; 1.7&lt;br /&gt;
+&lt;strong&gt;Kendo UI&lt;/strong&gt; Mobile&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Les différents types d’applications mobiles : natives, web apps, hybrides, Flash</title>
+      <link>http://olivierguillet.com/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</link>
+      <pubDate>Sat, 18 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</guid>
+      <description>
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;applications-natives:4ff034aad68b01e383678d84ef26f996&#34;&gt;Applications natives&lt;/h2&gt;
+
+&lt;p&gt;Les applications natives sont des logiciels conçus spécifiquement pour une plate-forme mobile, en utilisant le &lt;strong&gt;SDK&lt;/strong&gt; propre à celle-ci. Les applications ainsi crées sont ensuite téléchargeables depuis une plateforme dédiée au système, généralement un magasin d’application type App Store d’Apple ou Android Market.&lt;/p&gt;
+
+&lt;p&gt;Ces applications permettent de tirer parti de toute la puissance et toutes les possibilités du device mobile : accélération matérielle, capteurs, caméra, accès aux contacts, au fonctions de téléphonie, etc.&lt;/p&gt;
+
+&lt;h2 id=&#34;web-apps:4ff034aad68b01e383678d84ef26f996&#34;&gt;Web Apps&lt;/h2&gt;
+
+&lt;p&gt;Il s’agit de &lt;strong&gt;sites web optimisés pour mobile&lt;/strong&gt;, souvent conçus pour ressembler à de « vraies » applications.
+On accède à ces applications web via le navigateur internet du device mobile.
+Aujourd’hui grâce notamment au support d‘&lt;strong&gt;HTML5 et de CSS3&lt;/strong&gt; il est possible d’aller assez loin dans l’utilisation des capacités des devices. HTML5 permet notamment de gérer le multitouch, la géolocalisation, l’utilisation de l’accéléromètre, la mise en cache de ressources statiques, et même la synchronisation offline, après que l’appareil ait perdu puis retrouvé sa connexion. HTML5 gère également le stockage de données en local.
+Google et Facebook notamment utilisent avec succès cette technologie et proposent des version mobiles de leurs applications web.&lt;/p&gt;
+
+&lt;p&gt;Ces applications web peuvent être génériques (toute plate-forme mobile) ou bien dédiées à un type de support particulier, par exemple beaucoup d’applications et de frameworks pour mobiles ne fonctionnent que sur un navigateur basé sur Webkit (iOS, Android, BlackBerry&amp;gt;=6.0, WebOS), exemple : &lt;a href=&#34;https://touch.www.linkedin.com/&#34;&gt;touch.www.linkedin.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Le système iOS permet d’utiliser une web app à la manière d’une application, en plaçant un raccourci vers le site web mobile directement sur le bureau, avec une icône. Le navigateur lance alors la web app en plein écran, comme une vraie application.
+Android gère en partie ce mécanisme, il permet la mise en raccourci sur le bureau avec icône, mais le navigateur ne se lance pas en plein écran.&lt;/p&gt;
+
+&lt;h2 id=&#34;applications-hybrides:4ff034aad68b01e383678d84ef26f996&#34;&gt;Applications hybrides&lt;/h2&gt;
+
+&lt;p&gt;Une application hybride est un &lt;strong&gt;mélange de code natif et d’affichage de vues HTML/javascript&lt;/strong&gt;. Concrètement toutes les plateformes mobiles proposent un composant de type WebView, permettant d’afficher du contenu web soit sur une partie de l’écran, soit en plein écran, et en utilisant le moteur HTML du navigateur intégré au système.
+Ces applications hybrides peuvent être distribuées sur les stores des systèmes mobiles.&lt;/p&gt;
+
+&lt;p&gt;Plusieurs stratégies sont alors possibles, selon que l’on place le curseur plus du côté natif ou plus du côté HTML :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ne réaliser que certains écrans voir même que certains composants
+d’IHM en HTML.&lt;/li&gt;
+&lt;li&gt;réaliser touts les écrans en HTML mais garder la logique applicative
+en code natif, notamment les effets de transitions entre écrans et la
+gestion du scrolling.&lt;/li&gt;
+&lt;li&gt;réaliser les écrans en HTML, et les transitions / scrolling en
+javascript. Le code natif peut alors se cantonner à quelques
+composants techniques très ciblés. De la même manière selon les
+applications la logique métier peut être codée en javascript ou bien
+en code natif.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Quelques exemples d’applications hybrides :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;LinkedIn&lt;/li&gt;
+&lt;li&gt;Microsoft Bing pour mobiles&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;applications-flash:4ff034aad68b01e383678d84ef26f996&#34;&gt;Applications Flash&lt;/h2&gt;
+
+&lt;p&gt;Flash Builder / Flex en version 4.5 permettent de packager des applications Android, iOS, et BlackBerry Tablet OS.
+Concrètement ces applications Flash &lt;strong&gt;embarquent le runtime AIR&lt;/strong&gt; dans leur code.
+Comme pour les applications HTML5/javascript il s’agit d’une solution de développement multiplateformes, qui permet d’accéder à la plupart des ressources des smartphones et tablettes : multitouch, accéléromètre, GPS, bases de données locales SQLite.&lt;/p&gt;
+
+&lt;p&gt;Attention cependant Adobe a officiellement &lt;strong&gt;stoppé le développement du SDK Flex pour mobile&lt;/strong&gt; et l’a offert à la fondation Apache en novembre 2011, on peut donc légitimement s’interroger sur la pérennité de cette technologie, surtout face à HTML5.&lt;/p&gt;
+
+&lt;h2 id=&#34;politique-d-approbation-apple:4ff034aad68b01e383678d84ef26f996&#34;&gt;Politique d’approbation Apple&lt;/h2&gt;
+
+&lt;p&gt;Apple a modifié à plusieurs reprises sa politique d’approbation des applications iOS, menant de nombreux développeurs à la confusion.
+Le 8 avril 2010, lors de l’annonce de la sortie du SDK iOS 4.0, Apple annonça que seuls les applications développées en Objective-C, C, C++ ou javascript seraient autorisées. Cela stoppait toute possibilité d’applications écrites en Flash, ainsi que de nombreuses solutions de développement multiplateformes telles que Titanium ou MonoTouch.
+Le 9 septembre 2010, Apple a modifié ses conditions de services pour autoriser &lt;strong&gt;toutes les technologies de développement d’applications iOS&lt;/strong&gt;, à la seule condition que ces applications ne téléchargent pas de code.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;eléments-de-comparaison:4ff034aad68b01e383678d84ef26f996&#34;&gt;Eléments de comparaison&lt;/h1&gt;
+
+&lt;h2 id=&#34;coûts-de-mise-en-œuvre:4ff034aad68b01e383678d84ef26f996&#34;&gt;Coûts de mise en œuvre&lt;/h2&gt;
+
+&lt;p&gt;Développer une application native pour plusieurs plateformes mobiles peut coûter très cher, de part la multitude de langages et technologies mises en œuvre.
+Selon le nombre de plateformes cibles, une technologie web ou même hybride sera souvent moins coûteuse . De plus il sera souvent plus simple de disposer de développeurs maîtrisant les technologies web, que les diverses plateformes mobiles.&lt;/p&gt;
+
+&lt;h2 id=&#34;qualité-rapidité-des-applications:4ff034aad68b01e383678d84ef26f996&#34;&gt;Qualité, rapidité des applications&lt;/h2&gt;
+
+&lt;p&gt;Difficile de rivaliser avec les applications natives! Celles-ci seront presque toujours plus rapides.
+Mais cela dépend fortement du type d’application en jeu et de ses fonctionnalités.
+L’autre point à ne pas négliger est que les utilisateurs sont habitués au look’n&amp;rsquo;feel natif, et qu’il peut être dangereux de trop s’en écarter.&lt;/p&gt;
+
+&lt;h2 id=&#34;publication-et-mises-à-jour:4ff034aad68b01e383678d84ef26f996&#34;&gt;Publication et mises à jour&lt;/h2&gt;
+
+&lt;p&gt;Une importante contrainte des applications natives est que celles-ci doivent être approuvées avant diffusion sur leur store respectif (sauf pour Android), ce qui peut s’avérer long et contraignant. Une application hybride permet de limiter ce désagrément, et une web app de s’en affranchir complètement.
+Le même problème se pose pour les mises à jour, il n’est souvent pas possible de diffuser un patch correctif en urgence ou même rapidement sur une application native.&lt;/p&gt;
+
+&lt;h2 id=&#34;monétisation:4ff034aad68b01e383678d84ef26f996&#34;&gt;Monétisation&lt;/h2&gt;
+
+&lt;p&gt;Les magasins d’applications permettent très facilement de vendre les applications, mêmes si Apple, Google et consorts prélèvent leur part sur les prix de vente, généralement autour de 30%.
+Même si les stores d’applications web comment timidement à apparaître, leur usage est encore très restreint.
+Les stores servent aussi de moteur de recherche et de vitrines pour les applications, et permettent ainsi de les mettre en avant et de les faire découvrir.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion:4ff034aad68b01e383678d84ef26f996&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Il n’y a pas aujourd’hui de solution miracle, le choix d’une technologie applicative dépendra de &lt;strong&gt;plusieurs facteurs déterminants&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;type d’application (jeux 3D, appli « de gestion », journal en ligne,
+application devant accéder à la caméra ou aux contacts internes du
+téléphone, …)&lt;/li&gt;
+&lt;li&gt;nombre de plateformes mobiles ciblées : plus elles seront nombreuses
+plus les solutions multiplateformes seront intéressantes et rapides à
+mettre en place budget : en général les solutions multiplateformes
+sont moins coûteuses à mettre en place&lt;/li&gt;
+&lt;li&gt;nécessité ou non d’une présence sur les marchés d’applications&lt;/li&gt;
+&lt;li&gt;fréquence des mises à jour (attention au délai d’approbation,
+notamment par Apple) connaissances des équipes de développement : il
+est généralement plus simple de disposer de développeurs maîtrisant
+HTML5/javascript ou Flash que connaissant à la fois java,
+Objective-C, C# voir C++.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nouveau framework javascript pour webapp mobile : jQ.Mobi</title>
+      <link>http://olivierguillet.com/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</link>
+      <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</guid>
+      <description>&lt;p&gt;Voici un nouveau venu dans la cour des &lt;strong&gt;frameworks JavaScript&lt;/strong&gt; pour webapp mobile : jQ.Mobi&lt;/p&gt;
+
+&lt;p&gt;Celui-ci est &lt;strong&gt;plus léger&lt;/strong&gt; que les frameworks existants (jQuery Mobile, Sencha Touch, …) et annoncé comme étant &lt;strong&gt;plus rapide&lt;/strong&gt;.
+jQ.Mobi est encore en beta et pour l’instant moins fourni en fonctionnalités que ses concurrents.
+En tout cas cela parait prometteur, à suivre de près donc !&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://goo.gl/mLgGH&#34;&gt;jQ.Mobi&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;J’ai également complété mon &lt;a href=&#34;http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/&#34;&gt;post précédent&lt;/a&gt; listant les pages de démo des frameworks JavaScript pour webapp mobile.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Natif, hybride, web app : comparaison des méthodes de scrolling sur application Android</title>
+      <link>http://olivierguillet.com/2012/01/comparaison-scrolling-application-android/</link>
+      <pubDate>Tue, 10 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/01/comparaison-scrolling-application-android/</guid>
+      <description>&lt;p&gt;Un pattern récurrent dans les applications mobiles consiste à afficher une liste d’items, avec éventuellement un header et/ou un footer fixe, la liste étant scrollable entre ce header et ce footer.
+En code Android natif cela est très facile à mettre en place avec deux TextView et une simple ListView, mais en HTML pour un site mobile ou une webapp cela peut se compliquer.&lt;/p&gt;
+
+&lt;p&gt;En effet, cela devrait se faire facilement en HTML5 en positionnant le header et le footer en &lt;strong&gt;position:fixed&lt;/strong&gt;, et en faisant scroller la liste avec une propriété CSS &lt;strong&gt;overflow:scroll&lt;/strong&gt;.
+&lt;strong&gt;Problème&lt;/strong&gt; : bien que les navigateurs Android et iOS soient basés sur le moteur WebKit, ils ne supportaient pas ces propriétés jusque récemment. Leur support est apparu avec &lt;strong&gt;iOS en version 5.0 et Android en version 2.2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Plusieurs librairies javascript ont donc été développées pour apporter ce positionnement fixe et ce scrolling des listes, en imitant le &lt;strong&gt;scrolling inertiel natif&lt;/strong&gt; des systèmes Android et iOS. Nous allons donc tester les plus matures :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;la plus connue, la librairie iScroll de Matteo Spinelli&lt;/li&gt;
+&lt;li&gt;Scrollability, la librairie développé par Joey Hewitt, ancien employé
+chez Facebook et développeur à la fois de l’application pour Iphone
+et de l’application web mobile&lt;/li&gt;
+&lt;li&gt;la librairie TouchSCroll de David Aurelio&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Pour tester cela j’ai fait une petite appli Android présentant 6 écrans :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ListView native Android&lt;/li&gt;
+&lt;li&gt;LinearLayout comprenant un header et un footer natif, et une liste d’items HTML dans une WebView entre les deux ( solution hybride, c’est le système Android qui gère le scroll)&lt;/li&gt;
+&lt;li&gt;WebView appelant une page HTML5, le scrolling est géré en CSS3&lt;/li&gt;
+&lt;li&gt;WebView appelant une page HTML5, le scrolling est géré par la librairie Javascript iScroll4&lt;/li&gt;
+&lt;li&gt;WebView appelant une page HTML5, le scrolling est géré par la librairie Javascript Scrollability&lt;/li&gt;
+&lt;li&gt;WebView appelant une page HTML5, le scrolling est géré par la librairie Javascript TouchSCroll&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;La démo est disponible sur &lt;a href=&#34;http://goo.gl/G3VKl&#34;&gt;Android Market&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Les tests iPhone ont été fait en appelant directement les pages de tests suivantes :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://goo.gl/82L29&#34;&gt;HTML5 / CSS3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://goo.gl/J5rLX&#34;&gt;iScroll4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://goo.gl/CF4ob&#34;&gt;Scrollability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://goo.gl/2wbce&#34;&gt;TouchScroll&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Voici le résultat des tests sur cette appli :&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Android 2.3.4 (ZTE Blade)&lt;/th&gt;
+&lt;th&gt;iOS 5.0.1 (iPhone3GS)&lt;/th&gt;
+&lt;th&gt;iOS 4.2.1 (iPhone3G)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Natif&lt;/td&gt;
+&lt;td&gt;très rapide&lt;br&gt;     bonne inertie du scrolling&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;ScrollView&lt;/td&gt;
+&lt;td&gt;très rapide&lt;br&gt;     bonne inertie du scrolling&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;HTML5&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     les scrollbars apparaissent sur tout l&amp;rsquo;écran&lt;br&gt;     la liste ne s&amp;rsquo;arrête pas en haut du footer mais passe sous   celui-ci&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;scrolling OK&lt;br&gt;     les scrollbars apparaissent sur tout l&amp;rsquo;écran&lt;br&gt;     la liste ne s&amp;rsquo;arrête pas en haut du footer mais passe sous   celui-ci&lt;br&gt;     peu d&amp;rsquo;inertie&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;footer non fixe !&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;iScroll4&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     rebond en fin de scroll OK&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     rebond en fin de scroll OK&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     rebond en fin de scroll OK&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Scrollability&lt;/td&gt;
+&lt;td&gt;aucune   inertie&lt;br&gt;     scrolling saccadé&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     rebond en fin de scroll OK&lt;/td&gt;
+&lt;td&gt;scrolling et inertie légèrement   saccadés&lt;br&gt;     rebond en fin de scroll OK&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;TouchScroll&lt;/td&gt;
+&lt;td&gt;scrolling et   inertie OK&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;scrolling et inertie   OK&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;td&gt;scrolling et inertie légèrement   saccadés&lt;br&gt;     pas de rebond en fin de scroll&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;La bonne surprise est la librairie &lt;strong&gt;iScroll4&lt;/strong&gt; qui est la seule à fonctionner sur toutes les plateformes de test si on souhaite une compatibilité maximale. De plus elle permet d’autres fonctionnalités qu’un simple scrolling, notamment le &amp;ldquo;&lt;a href=&#34;http://cubiq.org/dropbox/iscroll4/examples/pull-to-refresh/&#34;&gt;pull to refresh&lt;/a&gt;&amp;rdquo;.&lt;br /&gt;
+On pourra éventuellement détecter les versions des navigateurs, et utiliser iScroll uniquement si iOS&amp;lt;=4.0 ou Android&amp;lt;=2.2.&lt;br /&gt;
+Enfin à l&amp;rsquo;avenir on peut espérer que le couple HTML5/CSS3 fonctionnera correctement sur toutes les plateformes, et que l&amp;rsquo;on pourra se passer de ces librairies javascript.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Codes sources disponibles sur GitHub:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/olivierguillet/Scroll-Demo-Android&#34;&gt;client Android&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/olivierguillet/Scroll-Demo-HTML5&#34;&gt;pages HTML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Testez les frameworks javascript pour mobile en 5 minutes</title>
+      <link>http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/</link>
+      <pubDate>Wed, 14 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/</guid>
+      <description>&lt;p&gt;J’ai fait une compilation de liens vers les pages de démo des &lt;strong&gt;principaux frameworks JavaScript&lt;/strong&gt; pour vos webapps mobiles. Cela me servira également de bookmarking.&lt;/p&gt;
+
+&lt;p&gt;Donc bon effectivement vous ne les testerez surement pas tous en 5 minutes, mais vous pourrez rapidement vous faire une petite idée de ce que chacun peut faire, et surtout de la façon dont ils se comportent sur différents mobiles. Il ne faut pas perdre de vue qu’ils ne supportent pas tous les mêmes plate-formes, certains voir la plupart ne fonctionnent que sur les navigateurs mobiles issus de &lt;strong&gt;webkit&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Enfin bon je vous laisse tester :)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://goo.gl/ni5qT&#34;&gt;jQuery Mobile 1.1.0&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/GTI1G&#34;&gt;Sencha Touch 2.0&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/BthmG&#34;&gt;iUI&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/tfu14&#34;&gt;jQTouch&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/B9qKr&#34;&gt;Joshfire&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/CBMbY&#34;&gt;Jo&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/d7Qa8&#34;&gt;Wink&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/atNyk&#34;&gt;The M Project&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/rivlO&#34;&gt;BkRender&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/FtqCu&#34;&gt;DHTMLX Touch&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/qLzeP&#34;&gt;Dojo Mobile&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/zQMgT&#34;&gt;Kendo UI&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://goo.gl/mLgGH&#34;&gt;jQ.Mobi&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Nouveau&lt;/strong&gt; : &lt;a href=&#34;http://goo.gl/GQkiM&#34;&gt;LungoJS&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Nouveau&lt;/strong&gt; : &lt;a href=&#34;http://goo.gl/wO452&#34;&gt;Moobile&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Il y en a bien sûr d’autres que je me ferai un plaisir d’ajouter à cette liste.&lt;/p&gt;
+
+&lt;p&gt;Pour ma part je suis déçu par jQuery Mobile, sur mon Android 2.3 c’est une catastrophe au niveau des transitions entre pages. La release de la version 1.0 n’a rien arrangé à ce niveau là. Je pensais l’utiliser depuis quelques temps, mais là pour moi c’est rédhibitoire.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

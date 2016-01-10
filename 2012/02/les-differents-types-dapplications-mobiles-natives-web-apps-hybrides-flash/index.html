@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Olivier Guillet | Cyberculture</title>
+    <meta name="author" content="Olivier Guillet">
+    <meta name="description" content="Cyberculture">
+    <meta name="generator" content="Hugo 0.15" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    
+
+    <link rel="shortcut icon" href="http://olivierguillet.com/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://olivierguillet.com/css/screen.css">
+    <link rel="stylesheet" href="http://olivierguillet.com/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #3498db;}
+    .pagination a {color: #3498db;}
+    .gist .gist-file .gist-meta a:visited {color: #3498db !important;}
+    a:focus, a:hover {color: #2079b4;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #2079b4;}
+    .older-posts:hover, .newer-posts:hover {color: #2079b4;}
+</style>
+</head>
+<body class="post-template">
+
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://olivierguillet.com/">Olivier Guillet</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Cyberculture</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">About me</a></li>
+      	
+    </ul>
+</nav>
+
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">Les différents types d’applications mobiles : natives, web apps, hybrides, Flash</h1>
+	        <div class="post-meta"><time datetime="18 February 2012">18 February 2012</time></div>
+	        </header>
+
+	        <section class="post-content">
+	            
+
+<hr />
+
+<h2 id="applications-natives:4ff034aad68b01e383678d84ef26f996">Applications natives</h2>
+
+<p>Les applications natives sont des logiciels conçus spécifiquement pour une plate-forme mobile, en utilisant le <strong>SDK</strong> propre à celle-ci. Les applications ainsi crées sont ensuite téléchargeables depuis une plateforme dédiée au système, généralement un magasin d’application type App Store d’Apple ou Android Market.</p>
+
+<p>Ces applications permettent de tirer parti de toute la puissance et toutes les possibilités du device mobile : accélération matérielle, capteurs, caméra, accès aux contacts, au fonctions de téléphonie, etc.</p>
+
+<h2 id="web-apps:4ff034aad68b01e383678d84ef26f996">Web Apps</h2>
+
+<p>Il s’agit de <strong>sites web optimisés pour mobile</strong>, souvent conçus pour ressembler à de « vraies » applications.
+On accède à ces applications web via le navigateur internet du device mobile.
+Aujourd’hui grâce notamment au support d‘<strong>HTML5 et de CSS3</strong> il est possible d’aller assez loin dans l’utilisation des capacités des devices. HTML5 permet notamment de gérer le multitouch, la géolocalisation, l’utilisation de l’accéléromètre, la mise en cache de ressources statiques, et même la synchronisation offline, après que l’appareil ait perdu puis retrouvé sa connexion. HTML5 gère également le stockage de données en local.
+Google et Facebook notamment utilisent avec succès cette technologie et proposent des version mobiles de leurs applications web.</p>
+
+<p>Ces applications web peuvent être génériques (toute plate-forme mobile) ou bien dédiées à un type de support particulier, par exemple beaucoup d’applications et de frameworks pour mobiles ne fonctionnent que sur un navigateur basé sur Webkit (iOS, Android, BlackBerry&gt;=6.0, WebOS), exemple : <a href="https://touch.www.linkedin.com/">touch.www.linkedin.com</a></p>
+
+<p>Le système iOS permet d’utiliser une web app à la manière d’une application, en plaçant un raccourci vers le site web mobile directement sur le bureau, avec une icône. Le navigateur lance alors la web app en plein écran, comme une vraie application.
+Android gère en partie ce mécanisme, il permet la mise en raccourci sur le bureau avec icône, mais le navigateur ne se lance pas en plein écran.</p>
+
+<h2 id="applications-hybrides:4ff034aad68b01e383678d84ef26f996">Applications hybrides</h2>
+
+<p>Une application hybride est un <strong>mélange de code natif et d’affichage de vues HTML/javascript</strong>. Concrètement toutes les plateformes mobiles proposent un composant de type WebView, permettant d’afficher du contenu web soit sur une partie de l’écran, soit en plein écran, et en utilisant le moteur HTML du navigateur intégré au système.
+Ces applications hybrides peuvent être distribuées sur les stores des systèmes mobiles.</p>
+
+<p>Plusieurs stratégies sont alors possibles, selon que l’on place le curseur plus du côté natif ou plus du côté HTML :</p>
+
+<ul>
+<li>ne réaliser que certains écrans voir même que certains composants
+d’IHM en HTML.</li>
+<li>réaliser touts les écrans en HTML mais garder la logique applicative
+en code natif, notamment les effets de transitions entre écrans et la
+gestion du scrolling.</li>
+<li>réaliser les écrans en HTML, et les transitions / scrolling en
+javascript. Le code natif peut alors se cantonner à quelques
+composants techniques très ciblés. De la même manière selon les
+applications la logique métier peut être codée en javascript ou bien
+en code natif.</li>
+</ul>
+
+<p>Quelques exemples d’applications hybrides :</p>
+
+<ul>
+<li>LinkedIn</li>
+<li>Microsoft Bing pour mobiles</li>
+</ul>
+
+<h2 id="applications-flash:4ff034aad68b01e383678d84ef26f996">Applications Flash</h2>
+
+<p>Flash Builder / Flex en version 4.5 permettent de packager des applications Android, iOS, et BlackBerry Tablet OS.
+Concrètement ces applications Flash <strong>embarquent le runtime AIR</strong> dans leur code.
+Comme pour les applications HTML5/javascript il s’agit d’une solution de développement multiplateformes, qui permet d’accéder à la plupart des ressources des smartphones et tablettes : multitouch, accéléromètre, GPS, bases de données locales SQLite.</p>
+
+<p>Attention cependant Adobe a officiellement <strong>stoppé le développement du SDK Flex pour mobile</strong> et l’a offert à la fondation Apache en novembre 2011, on peut donc légitimement s’interroger sur la pérennité de cette technologie, surtout face à HTML5.</p>
+
+<h2 id="politique-d-approbation-apple:4ff034aad68b01e383678d84ef26f996">Politique d’approbation Apple</h2>
+
+<p>Apple a modifié à plusieurs reprises sa politique d’approbation des applications iOS, menant de nombreux développeurs à la confusion.
+Le 8 avril 2010, lors de l’annonce de la sortie du SDK iOS 4.0, Apple annonça que seuls les applications développées en Objective-C, C, C++ ou javascript seraient autorisées. Cela stoppait toute possibilité d’applications écrites en Flash, ainsi que de nombreuses solutions de développement multiplateformes telles que Titanium ou MonoTouch.
+Le 9 septembre 2010, Apple a modifié ses conditions de services pour autoriser <strong>toutes les technologies de développement d’applications iOS</strong>, à la seule condition que ces applications ne téléchargent pas de code.</p>
+
+<hr />
+
+<h1 id="eléments-de-comparaison:4ff034aad68b01e383678d84ef26f996">Eléments de comparaison</h1>
+
+<h2 id="coûts-de-mise-en-œuvre:4ff034aad68b01e383678d84ef26f996">Coûts de mise en œuvre</h2>
+
+<p>Développer une application native pour plusieurs plateformes mobiles peut coûter très cher, de part la multitude de langages et technologies mises en œuvre.
+Selon le nombre de plateformes cibles, une technologie web ou même hybride sera souvent moins coûteuse . De plus il sera souvent plus simple de disposer de développeurs maîtrisant les technologies web, que les diverses plateformes mobiles.</p>
+
+<h2 id="qualité-rapidité-des-applications:4ff034aad68b01e383678d84ef26f996">Qualité, rapidité des applications</h2>
+
+<p>Difficile de rivaliser avec les applications natives! Celles-ci seront presque toujours plus rapides.
+Mais cela dépend fortement du type d’application en jeu et de ses fonctionnalités.
+L’autre point à ne pas négliger est que les utilisateurs sont habitués au look’n&rsquo;feel natif, et qu’il peut être dangereux de trop s’en écarter.</p>
+
+<h2 id="publication-et-mises-à-jour:4ff034aad68b01e383678d84ef26f996">Publication et mises à jour</h2>
+
+<p>Une importante contrainte des applications natives est que celles-ci doivent être approuvées avant diffusion sur leur store respectif (sauf pour Android), ce qui peut s’avérer long et contraignant. Une application hybride permet de limiter ce désagrément, et une web app de s’en affranchir complètement.
+Le même problème se pose pour les mises à jour, il n’est souvent pas possible de diffuser un patch correctif en urgence ou même rapidement sur une application native.</p>
+
+<h2 id="monétisation:4ff034aad68b01e383678d84ef26f996">Monétisation</h2>
+
+<p>Les magasins d’applications permettent très facilement de vendre les applications, mêmes si Apple, Google et consorts prélèvent leur part sur les prix de vente, généralement autour de 30%.
+Même si les stores d’applications web comment timidement à apparaître, leur usage est encore très restreint.
+Les stores servent aussi de moteur de recherche et de vitrines pour les applications, et permettent ainsi de les mettre en avant et de les faire découvrir.</p>
+
+<h2 id="conclusion:4ff034aad68b01e383678d84ef26f996">Conclusion</h2>
+
+<p>Il n’y a pas aujourd’hui de solution miracle, le choix d’une technologie applicative dépendra de <strong>plusieurs facteurs déterminants</strong> :</p>
+
+<ul>
+<li>type d’application (jeux 3D, appli « de gestion », journal en ligne,
+application devant accéder à la caméra ou aux contacts internes du
+téléphone, …)</li>
+<li>nombre de plateformes mobiles ciblées : plus elles seront nombreuses
+plus les solutions multiplateformes seront intéressantes et rapides à
+mettre en place budget : en général les solutions multiplateformes
+sont moins coûteuses à mettre en place</li>
+<li>nécessité ou non d’une présence sur les marchés d’applications</li>
+<li>fréquence des mises à jour (attention au délai d’approbation,
+notamment par Apple) connaissances des équipes de développement : il
+est généralement plus simple de disposer de développeurs maîtrisant
+HTML5/javascript ou Flash que connaissant à la fois java,
+Objective-C, C# voir C++.</li>
+</ul>
+
+<hr />
+
+	        </section>
+
+	        <section class="post-tags" style="padding-bottom:60px;">
+	            <div class="post-meta tags">
+	            <i class="fa fa-fw fa-tag"></i>
+	            
+	            <a href="http://olivierguillet.com/tags/mobile">mobile </a>
+	            
+	            <a href="http://olivierguillet.com/tags/web">web </a>
+	            
+	            <a href="http://olivierguillet.com/tags/development">development </a>
+	            
+	            </div>
+	        </section>
+			
+			
+	        	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'Olivier Guillet';
+    var disqus_identifier = 'http:\/\/olivierguillet.com\/2012\/02\/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash\/';
+    var disqus_title = 'Les différents types d’applications mobiles : natives, web apps, hybrides, Flash';
+    var disqus_url = 'http:\/\/olivierguillet.com\/2012\/02\/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	        
+			
+			
+
+	        <section class="share">
+	            <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
+	            <p class="info prompt">Share</p>
+	            <a href="http://twitter.com/share?text=Les%20diff%c3%a9rents%20types%20d%e2%80%99applications%20mobiles%20%3a%20natives%2c%20web%20apps%2c%20hybrides%2c%20Flash&url=http%3a%2f%2folivierguillet.com%2f2012%2f02%2fles-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash%2f" title="Share on Twitter"
+	                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+	                <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
+	            </a>
+	            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2folivierguillet.com%2f2012%2f02%2fles-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash%2f" title="Share on Facebook"
+	                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+	                <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
+	            </a>
+	            <a href="https://plus.google.com/share?url=http%3a%2f%2folivierguillet.com%2f2012%2f02%2fles-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash%2f" title="Share on Google+"
+	               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+	                <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+	            </a>
+	        </section>
+
+	        <footer class="post-footer">
+	            <section class="author">
+    <div class="authorimage" style="background: url(http://olivierguillet.com/img/avatar.jpg)"></div>
+    <h4>Olivier Guillet</h4>
+    <p class="bio"></p>
+    <p class="meta">
+      <i class="fa fa-fw fa-map-marker"></i> Nantes - France
+    </p>
+</section>
+	        </footer>
+	    </article>
+	</main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/OlivierGuillet" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/OlivierGuillet" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    <a href="" type="application/rss+xml" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
+
+		<section class="copyright">&copy; 2016 <a href="http://olivierguillet.com/">Olivier Guillet</a>. All rights reserved.</section>
+	</div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://olivierguillet.com/js/index.js"></script>
+<script src="http://olivierguillet.com/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-27460975-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Olivier Guillet | Cyberculture</title>
+    <meta name="author" content="Olivier Guillet">
+    <meta name="description" content="Cyberculture">
+    <meta name="generator" content="Hugo 0.15" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    
+
+    <link rel="shortcut icon" href="http://olivierguillet.com/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://olivierguillet.com/css/screen.css">
+    <link rel="stylesheet" href="http://olivierguillet.com/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #3498db;}
+    .pagination a {color: #3498db;}
+    .gist .gist-file .gist-meta a:visited {color: #3498db !important;}
+    a:focus, a:hover {color: #2079b4;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #2079b4;}
+    .older-posts:hover, .newer-posts:hover {color: #2079b4;}
+</style>
+</head>
+<body class="post-template">
+
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://olivierguillet.com/">Olivier Guillet</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Cyberculture</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">About me</a></li>
+      	
+    </ul>
+</nav>
+
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">Natif, hybride, web app : comparaison des méthodes de scrolling sur application Android</h1>
+	        <div class="post-meta"><time datetime="10 January 2012">10 January 2012</time></div>
+	        </header>
+
+	        <section class="post-content">
+	            <p>Un pattern récurrent dans les applications mobiles consiste à afficher une liste d’items, avec éventuellement un header et/ou un footer fixe, la liste étant scrollable entre ce header et ce footer.
+En code Android natif cela est très facile à mettre en place avec deux TextView et une simple ListView, mais en HTML pour un site mobile ou une webapp cela peut se compliquer.</p>
+
+<p>En effet, cela devrait se faire facilement en HTML5 en positionnant le header et le footer en <strong>position:fixed</strong>, et en faisant scroller la liste avec une propriété CSS <strong>overflow:scroll</strong>.
+<strong>Problème</strong> : bien que les navigateurs Android et iOS soient basés sur le moteur WebKit, ils ne supportaient pas ces propriétés jusque récemment. Leur support est apparu avec <strong>iOS en version 5.0 et Android en version 2.2</strong></p>
+
+<p>Plusieurs librairies javascript ont donc été développées pour apporter ce positionnement fixe et ce scrolling des listes, en imitant le <strong>scrolling inertiel natif</strong> des systèmes Android et iOS. Nous allons donc tester les plus matures :</p>
+
+<ul>
+<li>la plus connue, la librairie iScroll de Matteo Spinelli</li>
+<li>Scrollability, la librairie développé par Joey Hewitt, ancien employé
+chez Facebook et développeur à la fois de l’application pour Iphone
+et de l’application web mobile</li>
+<li>la librairie TouchSCroll de David Aurelio</li>
+</ul>
+
+<p><strong>Pour tester cela j’ai fait une petite appli Android présentant 6 écrans :</strong></p>
+
+<ol>
+<li>ListView native Android</li>
+<li>LinearLayout comprenant un header et un footer natif, et une liste d’items HTML dans une WebView entre les deux ( solution hybride, c’est le système Android qui gère le scroll)</li>
+<li>WebView appelant une page HTML5, le scrolling est géré en CSS3</li>
+<li>WebView appelant une page HTML5, le scrolling est géré par la librairie Javascript iScroll4</li>
+<li>WebView appelant une page HTML5, le scrolling est géré par la librairie Javascript Scrollability</li>
+<li>WebView appelant une page HTML5, le scrolling est géré par la librairie Javascript TouchSCroll</li>
+</ol>
+
+<p>La démo est disponible sur <a href="http://goo.gl/G3VKl">Android Market</a>.</p>
+
+<p>Les tests iPhone ont été fait en appelant directement les pages de tests suivantes :</p>
+
+<ul>
+<li><a href="http://goo.gl/82L29">HTML5 / CSS3</a></li>
+<li><a href="http://goo.gl/J5rLX">iScroll4</a></li>
+<li><a href="http://goo.gl/CF4ob">Scrollability</a></li>
+<li><a href="http://goo.gl/2wbce">TouchScroll</a></li>
+</ul>
+
+<hr />
+
+<p>Voici le résultat des tests sur cette appli :</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Android 2.3.4 (ZTE Blade)</th>
+<th>iOS 5.0.1 (iPhone3GS)</th>
+<th>iOS 4.2.1 (iPhone3G)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Natif</td>
+<td>très rapide<br>     bonne inertie du scrolling<br>     pas de rebond en fin de scroll</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>ScrollView</td>
+<td>très rapide<br>     bonne inertie du scrolling<br>     pas de rebond en fin de scroll</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>HTML5</td>
+<td>scrolling et inertie   OK<br>     les scrollbars apparaissent sur tout l&rsquo;écran<br>     la liste ne s&rsquo;arrête pas en haut du footer mais passe sous   celui-ci<br>     pas de rebond en fin de scroll</td>
+<td>scrolling OK<br>     les scrollbars apparaissent sur tout l&rsquo;écran<br>     la liste ne s&rsquo;arrête pas en haut du footer mais passe sous   celui-ci<br>     peu d&rsquo;inertie<br>     pas de rebond en fin de scroll</td>
+<td>footer non fixe !</td>
+</tr>
+
+<tr>
+<td>iScroll4</td>
+<td>scrolling et inertie   OK<br>     rebond en fin de scroll OK</td>
+<td>scrolling et inertie   OK<br>     rebond en fin de scroll OK</td>
+<td>scrolling et inertie   OK<br>     rebond en fin de scroll OK</td>
+</tr>
+
+<tr>
+<td>Scrollability</td>
+<td>aucune   inertie<br>     scrolling saccadé</td>
+<td>scrolling et inertie   OK<br>     rebond en fin de scroll OK</td>
+<td>scrolling et inertie légèrement   saccadés<br>     rebond en fin de scroll OK</td>
+</tr>
+
+<tr>
+<td>TouchScroll</td>
+<td>scrolling et   inertie OK<br>     pas de rebond en fin de scroll</td>
+<td>scrolling et inertie   OK<br>     pas de rebond en fin de scroll</td>
+<td>scrolling et inertie légèrement   saccadés<br>     pas de rebond en fin de scroll</td>
+</tr>
+</tbody>
+</table>
+
+<p>La bonne surprise est la librairie <strong>iScroll4</strong> qui est la seule à fonctionner sur toutes les plateformes de test si on souhaite une compatibilité maximale. De plus elle permet d’autres fonctionnalités qu’un simple scrolling, notamment le &ldquo;<a href="http://cubiq.org/dropbox/iscroll4/examples/pull-to-refresh/">pull to refresh</a>&rdquo;.<br />
+On pourra éventuellement détecter les versions des navigateurs, et utiliser iScroll uniquement si iOS&lt;=4.0 ou Android&lt;=2.2.<br />
+Enfin à l&rsquo;avenir on peut espérer que le couple HTML5/CSS3 fonctionnera correctement sur toutes les plateformes, et que l&rsquo;on pourra se passer de ces librairies javascript.</p>
+
+<hr />
+
+<p>Codes sources disponibles sur GitHub:</p>
+
+<ul>
+<li><a href="https://github.com/olivierguillet/Scroll-Demo-Android">client Android</a></li>
+<li><a href="https://github.com/olivierguillet/Scroll-Demo-HTML5">pages HTML</a></li>
+</ul>
+
+<hr />
+
+	        </section>
+
+	        <section class="post-tags" style="padding-bottom:60px;">
+	            <div class="post-meta tags">
+	            <i class="fa fa-fw fa-tag"></i>
+	            
+	            <a href="http://olivierguillet.com/tags/mobile">mobile </a>
+	            
+	            <a href="http://olivierguillet.com/tags/web">web </a>
+	            
+	            <a href="http://olivierguillet.com/tags/development">development </a>
+	            
+	            </div>
+	        </section>
+			
+			
+	        	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'Olivier Guillet';
+    var disqus_identifier = 'http:\/\/olivierguillet.com\/2012\/01\/comparaison-scrolling-application-android\/';
+    var disqus_title = 'Natif, hybride, web app : comparaison des méthodes de scrolling sur application Android';
+    var disqus_url = 'http:\/\/olivierguillet.com\/2012\/01\/comparaison-scrolling-application-android\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	        
+			
+			
+
+	        <section class="share">
+	            <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
+	            <p class="info prompt">Share</p>
+	            <a href="http://twitter.com/share?text=Natif%2c%20hybride%2c%20web%20app%20%3a%20comparaison%20des%20m%c3%a9thodes%20de%20scrolling%20sur%20application%20Android&url=http%3a%2f%2folivierguillet.com%2f2012%2f01%2fcomparaison-scrolling-application-android%2f" title="Share on Twitter"
+	                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+	                <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
+	            </a>
+	            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2folivierguillet.com%2f2012%2f01%2fcomparaison-scrolling-application-android%2f" title="Share on Facebook"
+	                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+	                <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
+	            </a>
+	            <a href="https://plus.google.com/share?url=http%3a%2f%2folivierguillet.com%2f2012%2f01%2fcomparaison-scrolling-application-android%2f" title="Share on Google+"
+	               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+	                <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+	            </a>
+	        </section>
+
+	        <footer class="post-footer">
+	            <section class="author">
+    <div class="authorimage" style="background: url(http://olivierguillet.com/img/avatar.jpg)"></div>
+    <h4>Olivier Guillet</h4>
+    <p class="bio"></p>
+    <p class="meta">
+      <i class="fa fa-fw fa-map-marker"></i> Nantes - France
+    </p>
+</section>
+	        </footer>
+	    </article>
+	</main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/OlivierGuillet" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/OlivierGuillet" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    <a href="" type="application/rss+xml" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
+
+		<section class="copyright">&copy; 2016 <a href="http://olivierguillet.com/">Olivier Guillet</a>. All rights reserved.</section>
+	</div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://olivierguillet.com/js/index.js"></script>
+<script src="http://olivierguillet.com/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-27460975-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+
+</body>
+</html>

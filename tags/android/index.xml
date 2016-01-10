@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Olivier Guillet | Cyberculture</title>
+    <link>http://olivierguillet.com/tags/android/</link>
+    <description>Recent content in Android on Olivier Guillet | Cyberculture</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://olivierguillet.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Widget de sélection par scrolling horizontal pour Android</title>
+      <link>http://olivierguillet.com/2012/01/widget-scrolling-horizontal-android/</link>
+      <pubDate>Fri, 20 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/2012/01/widget-scrolling-horizontal-android/</guid>
+      <description>&lt;p&gt;A partir du composant Gallery et d’une image, j’ai fait un widget de sélection horizontal tout simple, réutilisable, à insérer dans une application :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://lh4.ggpht.com/9buF17Y7R8Y6ZZpriKS9Hq995Cm1ivQXHYBRbdZM7hdtUkD5i5fE8zEkEekCeGVXUg=h900&#34; alt=&#34;Horizontal Widget&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La démo est disponible sur &lt;a href=&#34;http://goo.gl/XPuAf&#34;&gt;Android Market&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Code source disponible sur GitHub: &lt;a href=&#34;https://github.com/olivierguillet/Horizontal-Widget-Android&#34;&gt;Horizontal Widget Android&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

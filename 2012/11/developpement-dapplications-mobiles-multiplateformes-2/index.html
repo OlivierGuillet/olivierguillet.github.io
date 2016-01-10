@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Olivier Guillet | Cyberculture</title>
+    <meta name="author" content="Olivier Guillet">
+    <meta name="description" content="Cyberculture">
+    <meta name="generator" content="Hugo 0.15" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    
+
+    <link rel="shortcut icon" href="http://olivierguillet.com/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://olivierguillet.com/css/screen.css">
+    <link rel="stylesheet" href="http://olivierguillet.com/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #3498db;}
+    .pagination a {color: #3498db;}
+    .gist .gist-file .gist-meta a:visited {color: #3498db !important;}
+    a:focus, a:hover {color: #2079b4;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #2079b4;}
+    .older-posts:hover, .newer-posts:hover {color: #2079b4;}
+</style>
+</head>
+<body class="post-template">
+
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://olivierguillet.com/">Olivier Guillet</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Cyberculture</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">About me</a></li>
+      	
+    </ul>
+</nav>
+
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">Développement d’applications mobiles multiplateformes (2/2)</h1>
+	        <div class="post-meta"><time datetime="16 November 2012">16 November 2012</time></div>
+	        </header>
+
+	        <section class="post-content">
+	            
+
+<hr />
+
+<p>Ce billet fait suite au précédent décrivant les principales techniques de développement mobile multiplateformes.</p>
+
+<p>Voyons ici les <strong>principales solutions existantes</strong> et leurs éditeurs:</p>
+
+<ul>
+<li><a href="http://phonegap.com/">PhoneGap</a> (Adobe)</li>
+<li><a href="http://www.appcelerator.com/">Titanium</a>  (Appcelerator)</li>
+<li><a href="http://www.motorola.com/Business/US-EN/RhoMobile+Suite/Rhodes">Rhodes</a> (Rhomobile)</li>
+<li><a href="http://jquerymobile.com/">jQuery Mobile</a> (jQuery Foundation, association à but non lucratif)</li>
+<li><a href="http://www.sencha.com/products/touch">Sencha Touch</a> (Sencha)</li>
+<li><a href="http://www.adobe.com/devnet/devices.html">Flex mobile</a> (Adobe)</li>
+<li><a href="http://xamarin.com/monotouch">MonoTouch</a> / <a href="http://xamarin.com/monoforandroid">Mono for Android</a> (Xamarin)</li>
+<li><a href="http://www.backelite.com/software/">Wope</a> (Backelite)</li>
+<li>Développement hybride « maison »</li>
+</ul>
+
+<p>Bien évidemment il existe de nombreux autres solutions / frameworks / librairies pour le développement multiplateformes, non décrites ici.</p>
+
+<hr />
+
+
+<figure >
+    
+        <img src="/img/developpement-dapplications-mobiles-multiplateformes/multi_phonegap.jpg" alt="PhoneGap" />
+    
+    
+</figure>
+
+
+<ul>
+<li>Pour la mise en place d’application hybride comportant des vues web(troisième approche).</li>
+<li><strong>Gratuit, open source, supporte TOUTES les plateformes mobiles</strong>, support payant en option.</li>
+<li>Permet d’appeler les API natives des SDKs mobiles depuis le JavaScript (accès au contacts, caméra, gyroscope, GPS, base de données locale).</li>
+<li><strong>Ne propose aucun composants visuels</strong>! Phonegap est en fait une &ldquo;boite&rdquo; ou une &ldquo;coque native&rdquo; pour encapsuler des composants HTML5 et JavaScript.</li>
+<li>PhoneGap N’EST PAS un framework JavaScript, il s’utilise AVEC un framework JavaScript complémentaire (au choix).</li>
+<li>Alternatives : Trigger.io, Sencha Touch native packaging, coque native &ldquo;fait maison&rdquo;</li>
+</ul>
+
+<hr />
+
+
+<figure >
+    
+        <img src="/img/developpement-dapplications-mobiles-multiplateformes/multi_titanium.png" alt="Titanium" />
+    
+    
+</figure>
+
+
+<ul>
+<li>Propose une API <strong>100% JavaScript</strong> (pas de HTML), le code est ensuite transformé en application native.</li>
+<li><strong>Gratuit, API open source</strong> (mais pas le compilateur), supporte uniquement iOS et Android, support payant en option.</li>
+<li>Inclut un outil de cross-compilation <strong>ONLINE</strong> qui demande un accès internet <strong>PERMANENT</strong>. Les fichiers sources sont envoyés à un serveur propriétaire qui renvoie alors les binaires (JavaScript précompilé). Une machine virtuelle JavaScript exécute alors le code.</li>
+<li>Inconvénients : syndrome de la boîte noire, difficultés pour débugger, problèmes éventuels de performances et de gestion mémoire.</li>
+</ul>
+
+<hr />
+
+
+<figure >
+    
+        <img src="/img/developpement-dapplications-mobiles-multiplateformes/multi_rhomobile.png" alt="Rhodes" />
+    
+    
+</figure>
+
+
+<ul>
+<li>Développement d’applications hybrides en <strong>Ruby et JavaScript-HTML</strong>, fortement inspiré de Ruby On Rails.</li>
+<li><strong>Gratuit, open source</strong>, supporte iOS, Android, Windows Phone 7 et BlackBerry.</li>
+<li>Peu de composants d’IHM fournis, nécessite un framework mobile JavaScript complémentaire (au choix).</li>
+<li>Plutôt à destination des développeurs Ruby On Rails.</li>
+</ul>
+
+<hr />
+
+
+<figure >
+    
+        <img src="/img/developpement-dapplications-mobiles-multiplateformes/multi_jquery.png" alt="jQuery Mobile" />
+    
+    
+</figure>
+
+
+<ul>
+<li>Version mobile du framework <strong>JavaScript jQuery UI</strong> (il contient donc la librairie jQuery).</li>
+<li><strong>Gratuit, open source</strong>, supporte <strong>TOUTES</strong> les plateformes mobiles.</li>
+<li>Développement en HTML (et JavaScript), plus simple de prise en main que Sencha Touch.</li>
+<li>Performances moins bonnes que Sencha Touch, et interface reconnaissable qui ne ressemble guère aux widgets natifs.</li>
+</ul>
+
+<hr />
+
+
+<figure >
+    
+        <img src="/img/developpement-dapplications-mobiles-multiplateformes/multi_sencha.png" alt="Sencha Touch" />
+    
+    
+</figure>
+
+
+<ul>
+<li>Version mobile du framework <strong>JavaScript ExtJS</strong>.</li>
+<li>Compatible <strong>iOS, Android, BlackBerry</strong>. Compatibilité Windows Phone 8 annoncée (mais pas WP7).</li>
+<li>SDK <strong>open source et gratuit</strong> pour le développement d’applications commerciales, payant pour une utilisation OEM. Environnement de développement payant (Sencha Architect).</li>
+<li>Sencha Touch est <strong>Full JavaScript</strong> (pas de HTML), le DOM est généré par la librairie JavaScript. La prise en main peut donc être plus déroutante que jQuery Mobile.</li>
+<li>Framework <strong>MVC</strong> et fortement orienté objet.</li>
+<li>Bonnes performances pour un framework JavaScript</li>
+<li>De nombreux composants d’IHM (widgets JavaScript assez proches du natif, en tout cas plus que jQuery Mobile).</li>
+</ul>
+
+<hr />
+
+
+<figure >
+    
+        <img src="/img/developpement-dapplications-mobiles-multiplateformes/multi_adobeAIR.jpg" alt="Flash (Adobe AIR)" />
+    
+    
+</figure>
+
+
+<ul>
+<li>Fait tourner des applications Flash sur une <strong>machine virtuelle embarquée</strong> (Adobe AIR).</li>
+<li>Compatible <strong>Android, iOS, et BlackBerry</strong>.</li>
+<li>SDK gratuit mais environnement de développement payant (Adobe Flash Builder).</li>
+<li>Pas d’accès aux widgets natifs des plateformes, problèmes éventuels de performances et mémoire (comme toutes les solutions utilisant une machine virtuelle).</li>
+<li>Le plugin Flash pour Safari Mobile étant abandonnée, la pérennité de cette technologie est incertaine.</li>
+</ul>
+
+<hr />
+
+
+<figure >
+    
+        <img src="/img/developpement-dapplications-mobiles-multiplateformes/multi_Mono.png" alt="Mono" />
+    
+    
+</figure>
+
+
+<ul>
+<li>Permet de développer en <strong>C#.NET</strong> sur Android et iOS en générant des applications natives.</li>
+<li>La partie mobile de Mono est composé en fait de deux SDKs : <strong>Monotouch</strong> (pour iOS, nécessite un Mac avec XCode), et <strong>Mono for Android</strong>.</li>
+<li>Produit <strong>commercial payant</strong> (399$ par plateforme).</li>
+<li><strong>Ne masque pas les SDKs natifs sous-jacents</strong>. On manipule des StoryBoards et Controllers sous iOS, ou des Activity sous Android, le tout en C#.</li>
+<li>Seul le code métier peut être mutualisé entre iOS, Android et Windows Phone, toute la partie IHM reste spécifique à chaque plateforme.</li>
+</ul>
+
+<hr />
+
+
+<figure >
+    
+        <img src="/img/developpement-dapplications-mobiles-multiplateformes/multi_wope.jpg" alt="Wope" />
+    
+    
+</figure>
+
+
+<p><strong>Edit du 28/11/2012</strong> : la solution a évolué depuis mes tests datant de 2011 (cf. le commentaire du product owner wope ci-dessous).</p>
+
+<ul>
+<li>anciennement BKRender</li>
+<li>Framework mobile HTML5 et JavaScript, plus un moteur de rendu.</li>
+<li>Solution commerciale et payante.</li>
+<li><strong>Un serveur de rendu</strong> génère un fichier html adapté et optimisé au terminal qui l’appelle.</li>
+<li><del>Les applications ont un rendu de site web, pas d’animations entre écrans mais un chargement de la page.</del></li>
+<li><del>Grande compatibilité au détriment de l’expérience utilisateur.</del></li>
+<li>Permet de packager des applications pour déploiement sur les stores (applications hybrides donc)</li>
+</ul>
+
+<hr />
+
+
+<figure >
+    
+        <img src="/img/developpement-dapplications-mobiles-multiplateformes/multi_zepto.jpg" alt="Zepto.js" />
+    
+    
+</figure>
+
+
+<ul>
+<li>Pour <strong>optimiser les performances au besoin</strong>, il peut être intéressant de mettre une place une solution <strong>hybride personnalisée</strong>.</li>
+<li>Phonegap peut être utilisé pour <strong>prototyper</strong>, on écrira ensuite le code natif dont on a besoin (et pas plus).</li>
+<li>Les ponts JavaScript &lt;-&gt; SDK natif ne sont pas très compliqués à développer (chaque plateforme mobile le permet).</li>
+<li>Considérer l’utilisation de <strong><a href="http://zeptojs.com/">Zepto.js</a></strong> à la place de jQuery (la syntaxe est la même). Zepto ne fonctionne que sur les navigateurs basés sur WebKit mais il est beaucoup plus léger. Les framework <a href="http://xuijs.com/">XUI</a> et <a href="http://quojs.tapquo.com/">QuoJS</a>
+sont d’autres alternatives crédibles.</li>
+<li>On utilisera un <strong>framework JavaScript MVC</strong> tel que <a href="http://backbonejs.org/">BackBone.js</a> ou <a href="http://angularjs.org/">Angular</a> pour structurer le code, faciliter les tests et la maintenance.</li>
+<li>De même on pourra utiliser une librairie de <strong>templating JavaScript</strong> telle que <a href="http://icanhazjs.com/">ICanHaz.js</a> ou <a href="http://mustache.github.com/">Mustache</a> .</li>
+<li>De nombreuses micro-librairies Javascript permettent de gérer le scrolling et les gestures tactiles (QuoJS, iSCroll4, Mobile Boilerplate, Hammer.js, …).</li>
+<li>Pour toutes ces librairies Javascript, on pourra trouver son bonheur sur le site <a href="http://microjs.com/">Microjs.com</a></li>
+</ul>
+
+<hr />
+
+<h2 id="conclusion:63a9e4e344bbe209be40dd2b35ebef45">Conclusion</h2>
+
+<ul>
+<li>Il n’y a pas de solution miracle, chaque technologie/solution a ses avantages et inconvénients.</li>
+<li>Aucune technologie multiplateforme ne permet d’être aussi performante que le développement natif tout en ayant un look-and-feel natif.</li>
+<li>Le choix d’une technologie doit être un compromis entre différents facteurs :
+
+<ul>
+<li>Budget disponible</li>
+<li>Nombre de plateformes cibles</li>
+<li>Performances désirées</li>
+<li>Type d’application</li>
+<li>Connaissances des équipes de développement</li>
+<li>Présence souhaitée ou non sur les magasins d’applications / fréquence des mises à jour</li>
+</ul></li>
+</ul>
+
+<hr />
+
+	        </section>
+
+	        <section class="post-tags" style="padding-bottom:60px;">
+	            <div class="post-meta tags">
+	            <i class="fa fa-fw fa-tag"></i>
+	            
+	            <a href="http://olivierguillet.com/tags/mobile">mobile </a>
+	            
+	            <a href="http://olivierguillet.com/tags/multiplatform">multiplatform </a>
+	            
+	            <a href="http://olivierguillet.com/tags/development">development </a>
+	            
+	            </div>
+	        </section>
+			
+			
+	        	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'Olivier Guillet';
+    var disqus_identifier = 'http:\/\/olivierguillet.com\/2012\/11\/developpement-dapplications-mobiles-multiplateformes-2\/';
+    var disqus_title = 'Développement d’applications mobiles multiplateformes (2\/2)';
+    var disqus_url = 'http:\/\/olivierguillet.com\/2012\/11\/developpement-dapplications-mobiles-multiplateformes-2\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	        
+			
+			
+
+	        <section class="share">
+	            <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
+	            <p class="info prompt">Share</p>
+	            <a href="http://twitter.com/share?text=D%c3%a9veloppement%20d%e2%80%99applications%20mobiles%20multiplateformes%20%282%2f2%29&url=http%3a%2f%2folivierguillet.com%2f2012%2f11%2fdeveloppement-dapplications-mobiles-multiplateformes-2%2f" title="Share on Twitter"
+	                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+	                <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
+	            </a>
+	            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2folivierguillet.com%2f2012%2f11%2fdeveloppement-dapplications-mobiles-multiplateformes-2%2f" title="Share on Facebook"
+	                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+	                <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
+	            </a>
+	            <a href="https://plus.google.com/share?url=http%3a%2f%2folivierguillet.com%2f2012%2f11%2fdeveloppement-dapplications-mobiles-multiplateformes-2%2f" title="Share on Google+"
+	               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+	                <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+	            </a>
+	        </section>
+
+	        <footer class="post-footer">
+	            <section class="author">
+    <div class="authorimage" style="background: url(http://olivierguillet.com/img/avatar.jpg)"></div>
+    <h4>Olivier Guillet</h4>
+    <p class="bio"></p>
+    <p class="meta">
+      <i class="fa fa-fw fa-map-marker"></i> Nantes - France
+    </p>
+</section>
+	        </footer>
+	    </article>
+	</main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/OlivierGuillet" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/OlivierGuillet" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    <a href="" type="application/rss+xml" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
+
+		<section class="copyright">&copy; 2016 <a href="http://olivierguillet.com/">Olivier Guillet</a>. All rights reserved.</section>
+	</div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://olivierguillet.com/js/index.js"></script>
+<script src="http://olivierguillet.com/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-27460975-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+
+</body>
+</html>

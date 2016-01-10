@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Olivier Guillet | Cyberculture</title>
+    <link>http://olivierguillet.com/about/</link>
+    <description>Recent content in Abouts on Olivier Guillet | Cyberculture</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Dec 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://olivierguillet.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About me</title>
+      <link>http://olivierguillet.com/about/</link>
+      <pubDate>Tue, 22 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://olivierguillet.com/about/</guid>
+      <description>
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://olivierguillet.com/img/avatar.png&#34; alt=&#34;Olivier Guillet&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Hello from Nantes !&lt;/p&gt;
+
+&lt;p&gt;My passion is to discover how computer sciences are shaping our future, particulary via Virtual / Augmented Reality and the Internet of Things. Geek at heart since childhood, I love to experiment and learn various things.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m currently employed as a senior software engineer and product manager by Emotic. We help our clients with their Digital Transformation, through consulting and with the help of various technologies (web, mobile, digital signage &amp;amp; multi-touch interactions, NFC, IoT, etc&amp;hellip;).&lt;/p&gt;
+
+&lt;p&gt;Before Emotic I worked as a software engineer for health insurance and employee savings companies. Prior to that, I also was a video game programmer for a few years in Paris, making PC and PlayStation games.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
