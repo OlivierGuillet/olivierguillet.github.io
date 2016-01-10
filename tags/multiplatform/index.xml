@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Multiplatform on Olivier Guillet | Cyberculture</title>
-    <link>http://olivierguillet.com/tags/multiplatform/</link>
+    <link>http://olivierguillet.github.io/tags/multiplatform/</link>
     <description>Recent content in Multiplatform on Olivier Guillet | Cyberculture</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Nov 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://olivierguillet.com/tags/multiplatform/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://olivierguillet.github.io/tags/multiplatform/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Développement d’applications mobiles multiplateformes (1/2)</title>
-      <link>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</link>
+      <link>http://olivierguillet.github.io/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</link>
       <pubDate>Fri, 16 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</guid>
+      <guid>http://olivierguillet.github.io/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</guid>
       <description>
 
 &lt;p&gt;Avec la &lt;strong&gt;multiplication des plateformes mobiles&lt;/strong&gt;, la question du développement multiplateforme s’est rapidement posée, afin de tenter de réduire les coûts de développement.&lt;/p&gt;
@@ -75,10 +75,10 @@
     
     <item>
       <title>Développement d’applications mobiles multiplateformes (2/2)</title>
-      <link>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</link>
+      <link>http://olivierguillet.github.io/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</link>
       <pubDate>Fri, 16 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</guid>
+      <guid>http://olivierguillet.github.io/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</guid>
       <description>
 
 &lt;hr /&gt;
@@ -106,7 +106,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_phonegap.jpg&#34; alt=&#34;PhoneGap&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_phonegap.jpg&#34; alt=&#34;PhoneGap&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -126,7 +126,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_titanium.png&#34; alt=&#34;Titanium&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_titanium.png&#34; alt=&#34;Titanium&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -144,7 +144,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_rhomobile.png&#34; alt=&#34;Rhodes&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_rhomobile.png&#34; alt=&#34;Rhodes&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -162,7 +162,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_jquery.png&#34; alt=&#34;jQuery Mobile&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_jquery.png&#34; alt=&#34;jQuery Mobile&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -180,7 +180,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_sencha.png&#34; alt=&#34;Sencha Touch&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_sencha.png&#34; alt=&#34;Sencha Touch&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -201,7 +201,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_adobeAIR.jpg&#34; alt=&#34;Flash (Adobe AIR)&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_adobeAIR.jpg&#34; alt=&#34;Flash (Adobe AIR)&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -220,7 +220,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_Mono.png&#34; alt=&#34;Mono&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_Mono.png&#34; alt=&#34;Mono&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -239,7 +239,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_wope.jpg&#34; alt=&#34;Wope&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_wope.jpg&#34; alt=&#34;Wope&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -262,7 +262,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_zepto.jpg&#34; alt=&#34;Zepto.js&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_zepto.jpg&#34; alt=&#34;Zepto.js&#34; /&gt;
     
     
 &lt;/figure&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on Olivier Guillet | Cyberculture</title>
-    <link>http://olivierguillet.com/tags/web/</link>
+    <link>http://olivierguillet.github.io/tags/web/</link>
     <description>Recent content in Web on Olivier Guillet | Cyberculture</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 May 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://olivierguillet.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://olivierguillet.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Deux nouveaux frameworks javascript mobile : LungoJS et Moobile</title>
-      <link>http://olivierguillet.com/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</link>
+      <link>http://olivierguillet.github.io/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</guid>
+      <guid>http://olivierguillet.github.io/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</guid>
       <description>&lt;p&gt;Bonjour, aujourd’hui deux ajouts à la liste des &lt;strong&gt;frameworks javascript&lt;/strong&gt; pour webapp mobile : LungoJS et Moobile.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://goo.gl/GQkiM&#34;&gt;LungoJS&lt;/a&gt;&lt;br /&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>Les différents types d’applications mobiles : natives, web apps, hybrides, Flash</title>
-      <link>http://olivierguillet.com/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</link>
+      <link>http://olivierguillet.github.io/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</link>
       <pubDate>Sat, 18 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</guid>
+      <guid>http://olivierguillet.github.io/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</guid>
       <description>
 
 &lt;hr /&gt;
@@ -152,10 +152,10 @@ Objective-C, C# voir C++.&lt;/li&gt;
     
     <item>
       <title>Nouveau framework javascript pour webapp mobile : jQ.Mobi</title>
-      <link>http://olivierguillet.com/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</link>
+      <link>http://olivierguillet.github.io/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</link>
       <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</guid>
+      <guid>http://olivierguillet.github.io/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</guid>
       <description>&lt;p&gt;Voici un nouveau venu dans la cour des &lt;strong&gt;frameworks JavaScript&lt;/strong&gt; pour webapp mobile : jQ.Mobi&lt;/p&gt;
 
 &lt;p&gt;Celui-ci est &lt;strong&gt;plus léger&lt;/strong&gt; que les frameworks existants (jQuery Mobile, Sencha Touch, …) et annoncé comme étant &lt;strong&gt;plus rapide&lt;/strong&gt;.
@@ -170,10 +170,10 @@ En tout cas cela parait prometteur, à suivre de près donc !&lt;/p&gt;
     
     <item>
       <title>Natif, hybride, web app : comparaison des méthodes de scrolling sur application Android</title>
-      <link>http://olivierguillet.com/2012/01/comparaison-scrolling-application-android/</link>
+      <link>http://olivierguillet.github.io/2012/01/comparaison-scrolling-application-android/</link>
       <pubDate>Tue, 10 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/01/comparaison-scrolling-application-android/</guid>
+      <guid>http://olivierguillet.github.io/2012/01/comparaison-scrolling-application-android/</guid>
       <description>&lt;p&gt;Un pattern récurrent dans les applications mobiles consiste à afficher une liste d’items, avec éventuellement un header et/ou un footer fixe, la liste étant scrollable entre ce header et ce footer.
 En code Android natif cela est très facile à mettre en place avec deux TextView et une simple ListView, mais en HTML pour un site mobile ou une webapp cela peut se compliquer.&lt;/p&gt;
 
@@ -290,10 +290,10 @@ Enfin à l&amp;rsquo;avenir on peut espérer que le couple HTML5/CSS3 fonctionne
     
     <item>
       <title>Testez les frameworks javascript pour mobile en 5 minutes</title>
-      <link>http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/</link>
+      <link>http://olivierguillet.github.io/2011/12/testez-les-frameworks-javascript-mobile/</link>
       <pubDate>Wed, 14 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/</guid>
+      <guid>http://olivierguillet.github.io/2011/12/testez-les-frameworks-javascript-mobile/</guid>
       <description>&lt;p&gt;J’ai fait une compilation de liens vers les pages de démo des &lt;strong&gt;principaux frameworks JavaScript&lt;/strong&gt; pour vos webapps mobiles. Cela me servira également de bookmarking.&lt;/p&gt;
 
 &lt;p&gt;Donc bon effectivement vous ne les testerez surement pas tous en 5 minutes, mais vous pourrez rapidement vous faire une petite idée de ce que chacun peut faire, et surtout de la façon dont ils se comportent sur différents mobiles. Il ne faut pas perdre de vue qu’ils ne supportent pas tous les mêmes plate-formes, certains voir la plupart ne fonctionnent que sur les navigateurs mobiles issus de &lt;strong&gt;webkit&lt;/strong&gt;.&lt;/p&gt;

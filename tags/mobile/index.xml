@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mobile on Olivier Guillet | Cyberculture</title>
-    <link>http://olivierguillet.com/tags/mobile/</link>
+    <link>http://olivierguillet.github.io/tags/mobile/</link>
     <description>Recent content in Mobile on Olivier Guillet | Cyberculture</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Nov 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://olivierguillet.com/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://olivierguillet.github.io/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Développement d’applications mobiles multiplateformes (1/2)</title>
-      <link>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</link>
+      <link>http://olivierguillet.github.io/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</link>
       <pubDate>Fri, 16 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</guid>
+      <guid>http://olivierguillet.github.io/2012/11/developpement-dapplications-mobiles-multiplateformes-1/</guid>
       <description>
 
 &lt;p&gt;Avec la &lt;strong&gt;multiplication des plateformes mobiles&lt;/strong&gt;, la question du développement multiplateforme s’est rapidement posée, afin de tenter de réduire les coûts de développement.&lt;/p&gt;
@@ -75,10 +75,10 @@
     
     <item>
       <title>Développement d’applications mobiles multiplateformes (2/2)</title>
-      <link>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</link>
+      <link>http://olivierguillet.github.io/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</link>
       <pubDate>Fri, 16 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</guid>
+      <guid>http://olivierguillet.github.io/2012/11/developpement-dapplications-mobiles-multiplateformes-2/</guid>
       <description>
 
 &lt;hr /&gt;
@@ -106,7 +106,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_phonegap.jpg&#34; alt=&#34;PhoneGap&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_phonegap.jpg&#34; alt=&#34;PhoneGap&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -126,7 +126,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_titanium.png&#34; alt=&#34;Titanium&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_titanium.png&#34; alt=&#34;Titanium&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -144,7 +144,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_rhomobile.png&#34; alt=&#34;Rhodes&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_rhomobile.png&#34; alt=&#34;Rhodes&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -162,7 +162,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_jquery.png&#34; alt=&#34;jQuery Mobile&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_jquery.png&#34; alt=&#34;jQuery Mobile&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -180,7 +180,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_sencha.png&#34; alt=&#34;Sencha Touch&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_sencha.png&#34; alt=&#34;Sencha Touch&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -201,7 +201,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_adobeAIR.jpg&#34; alt=&#34;Flash (Adobe AIR)&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_adobeAIR.jpg&#34; alt=&#34;Flash (Adobe AIR)&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -220,7 +220,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_Mono.png&#34; alt=&#34;Mono&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_Mono.png&#34; alt=&#34;Mono&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -239,7 +239,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_wope.jpg&#34; alt=&#34;Wope&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_wope.jpg&#34; alt=&#34;Wope&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -262,7 +262,7 @@
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/developpement-dapplications-mobiles-multiplateformes/multi_zepto.jpg&#34; alt=&#34;Zepto.js&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/developpement-dapplications-mobiles-multiplateformes/multi_zepto.jpg&#34; alt=&#34;Zepto.js&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -305,10 +305,10 @@ sont d’autres alternatives crédibles.&lt;/li&gt;
     
     <item>
       <title>Deux nouveaux frameworks javascript mobile : LungoJS et Moobile</title>
-      <link>http://olivierguillet.com/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</link>
+      <link>http://olivierguillet.github.io/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</link>
       <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</guid>
+      <guid>http://olivierguillet.github.io/2012/05/deux-nouveaux-frameworks-javascript-mobile-lungojs-et-moobile/</guid>
       <description>&lt;p&gt;Bonjour, aujourd’hui deux ajouts à la liste des &lt;strong&gt;frameworks javascript&lt;/strong&gt; pour webapp mobile : LungoJS et Moobile.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://goo.gl/GQkiM&#34;&gt;LungoJS&lt;/a&gt;&lt;br /&gt;
@@ -327,16 +327,16 @@ sont d’autres alternatives crédibles.&lt;/li&gt;
     
     <item>
       <title>Panorama des différentes plateformes mobiles pour smartphones et tablettes</title>
-      <link>http://olivierguillet.com/2012/02/panorama-plateformes-mobiles/</link>
+      <link>http://olivierguillet.github.io/2012/02/panorama-plateformes-mobiles/</link>
       <pubDate>Wed, 22 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/02/panorama-plateformes-mobiles/</guid>
+      <guid>http://olivierguillet.github.io/2012/02/panorama-plateformes-mobiles/</guid>
       <description>&lt;hr /&gt;
 
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo-iOS.jpg&#34; alt=&#34;iOS&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/panorama-plateformes-mobiles/Logo-iOS.jpg&#34; alt=&#34;iOS&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -355,7 +355,7 @@ Apple fournit également un &lt;strong&gt;simulateur d’iPhone et d’iPad&lt;/
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_Android.png&#34; alt=&#34;Android&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/panorama-plateformes-mobiles/Logo_Android.png&#34; alt=&#34;Android&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -378,7 +378,7 @@ Le développement se fait donc en Java, mais sur cette JVM spécifique à Androi
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo-Windows-Phone-Mango.jpg&#34; alt=&#34;Windows Phone&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/panorama-plateformes-mobiles/Logo-Windows-Phone-Mango.jpg&#34; alt=&#34;Windows Phone&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -421,7 +421,7 @@ Studio 2010.&lt;/li&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_Blackberry_OS.jpg&#34; alt=&#34;BlackBerry&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/panorama-plateformes-mobiles/Logo_Blackberry_OS.jpg&#34; alt=&#34;BlackBerry&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -464,7 +464,7 @@ manque d’applications sur sa tablette.&lt;/li&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_Bada.jpg&#34; alt=&#34;Bada&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/panorama-plateformes-mobiles/Logo_Bada.jpg&#34; alt=&#34;Bada&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -479,7 +479,7 @@ manque d’applications sur sa tablette.&lt;/li&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_symbian_OS.png&#34; alt=&#34;Symbian&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/panorama-plateformes-mobiles/Logo_symbian_OS.png&#34; alt=&#34;Symbian&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -498,7 +498,7 @@ manque d’applications sur sa tablette.&lt;/li&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_WebOS.png&#34; alt=&#34;webOS&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/panorama-plateformes-mobiles/Logo_WebOS.png&#34; alt=&#34;webOS&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -515,7 +515,7 @@ manque d’applications sur sa tablette.&lt;/li&gt;
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo-Firefox_OS.jpg&#34; alt=&#34;Firefox OS&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/panorama-plateformes-mobiles/Logo-Firefox_OS.jpg&#34; alt=&#34;Firefox OS&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -539,7 +539,7 @@ _ et une interface utilisateur entièrement écrite en &lt;strong&gt;HTML5/CSS3 
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://olivierguillet.com/img/panorama-plateformes-mobiles/Logo_Tizen.jpg&#34; alt=&#34;Tizen&#34; /&gt;
+        &lt;img src=&#34;http://olivierguillet.github.io/img/panorama-plateformes-mobiles/Logo_Tizen.jpg&#34; alt=&#34;Tizen&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -562,10 +562,10 @@ Il résulte d’un long processus de mise en place d’un OS mobile basé sur Li
     
     <item>
       <title>Les différents types d’applications mobiles : natives, web apps, hybrides, Flash</title>
-      <link>http://olivierguillet.com/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</link>
+      <link>http://olivierguillet.github.io/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</link>
       <pubDate>Sat, 18 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</guid>
+      <guid>http://olivierguillet.github.io/2012/02/les-differents-types-dapplications-mobiles-natives-web-apps-hybrides-flash/</guid>
       <description>
 
 &lt;hr /&gt;
@@ -681,10 +681,10 @@ Objective-C, C# voir C++.&lt;/li&gt;
     
     <item>
       <title>Widget de sélection par scrolling horizontal pour Android</title>
-      <link>http://olivierguillet.com/2012/01/widget-scrolling-horizontal-android/</link>
+      <link>http://olivierguillet.github.io/2012/01/widget-scrolling-horizontal-android/</link>
       <pubDate>Fri, 20 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/01/widget-scrolling-horizontal-android/</guid>
+      <guid>http://olivierguillet.github.io/2012/01/widget-scrolling-horizontal-android/</guid>
       <description>&lt;p&gt;A partir du composant Gallery et d’une image, j’ai fait un widget de sélection horizontal tout simple, réutilisable, à insérer dans une application :&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://lh4.ggpht.com/9buF17Y7R8Y6ZZpriKS9Hq995Cm1ivQXHYBRbdZM7hdtUkD5i5fE8zEkEekCeGVXUg=h900&#34; alt=&#34;Horizontal Widget&#34; /&gt;&lt;/p&gt;
@@ -697,10 +697,10 @@ Objective-C, C# voir C++.&lt;/li&gt;
     
     <item>
       <title>Nouveau framework javascript pour webapp mobile : jQ.Mobi</title>
-      <link>http://olivierguillet.com/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</link>
+      <link>http://olivierguillet.github.io/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</link>
       <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</guid>
+      <guid>http://olivierguillet.github.io/2012/01/nouveau-framework-javascript-pour-webapp-mobile-jq-mobi/</guid>
       <description>&lt;p&gt;Voici un nouveau venu dans la cour des &lt;strong&gt;frameworks JavaScript&lt;/strong&gt; pour webapp mobile : jQ.Mobi&lt;/p&gt;
 
 &lt;p&gt;Celui-ci est &lt;strong&gt;plus léger&lt;/strong&gt; que les frameworks existants (jQuery Mobile, Sencha Touch, …) et annoncé comme étant &lt;strong&gt;plus rapide&lt;/strong&gt;.
@@ -715,10 +715,10 @@ En tout cas cela parait prometteur, à suivre de près donc !&lt;/p&gt;
     
     <item>
       <title>Natif, hybride, web app : comparaison des méthodes de scrolling sur application Android</title>
-      <link>http://olivierguillet.com/2012/01/comparaison-scrolling-application-android/</link>
+      <link>http://olivierguillet.github.io/2012/01/comparaison-scrolling-application-android/</link>
       <pubDate>Tue, 10 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2012/01/comparaison-scrolling-application-android/</guid>
+      <guid>http://olivierguillet.github.io/2012/01/comparaison-scrolling-application-android/</guid>
       <description>&lt;p&gt;Un pattern récurrent dans les applications mobiles consiste à afficher une liste d’items, avec éventuellement un header et/ou un footer fixe, la liste étant scrollable entre ce header et ce footer.
 En code Android natif cela est très facile à mettre en place avec deux TextView et une simple ListView, mais en HTML pour un site mobile ou une webapp cela peut se compliquer.&lt;/p&gt;
 
@@ -835,10 +835,10 @@ Enfin à l&amp;rsquo;avenir on peut espérer que le couple HTML5/CSS3 fonctionne
     
     <item>
       <title>Testez les frameworks javascript pour mobile en 5 minutes</title>
-      <link>http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/</link>
+      <link>http://olivierguillet.github.io/2011/12/testez-les-frameworks-javascript-mobile/</link>
       <pubDate>Wed, 14 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://olivierguillet.com/2011/12/testez-les-frameworks-javascript-mobile/</guid>
+      <guid>http://olivierguillet.github.io/2011/12/testez-les-frameworks-javascript-mobile/</guid>
       <description>&lt;p&gt;J’ai fait une compilation de liens vers les pages de démo des &lt;strong&gt;principaux frameworks JavaScript&lt;/strong&gt; pour vos webapps mobiles. Cela me servira également de bookmarking.&lt;/p&gt;
 
 &lt;p&gt;Donc bon effectivement vous ne les testerez surement pas tous en 5 minutes, mais vous pourrez rapidement vous faire une petite idée de ce que chacun peut faire, et surtout de la façon dont ils se comportent sur différents mobiles. Il ne faut pas perdre de vue qu’ils ne supportent pas tous les mêmes plate-formes, certains voir la plupart ne fonctionnent que sur les navigateurs mobiles issus de &lt;strong&gt;webkit&lt;/strong&gt;.&lt;/p&gt;
