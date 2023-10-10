@@ -1,0 +1,10 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "fr.cnamts.it.activity.dev",
+      "sha256_cert_fingerprints":
+      ["4D:99:7C:3A:BB:70:96:B3:C2:C1:BD:B9:C9:6A:89:05:74:AB:2A:86:3A:DE:AF:7E:08:4F:22:24:7E:76:4F:99"]
+    }
+  }]
+  
